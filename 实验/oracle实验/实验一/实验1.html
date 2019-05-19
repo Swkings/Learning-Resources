@@ -1,0 +1,542 @@
+
+<!-- saved from url=(0041)http://172.22.112.234/orclguide/orcl1.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<title>实验1</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:隶书;
+	panose-1:2 1 5 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:???????Regular;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@???????Regular";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@隶书";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:240%;
+	page-break-after:avoid;
+	font-size:22.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+h3
+	{margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h4
+	{margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:14.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:156%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+h5
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:200%;
+	page-break-after:avoid;
+	font-size:12.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{mso-style-name:"列表项目符号\,项目符号";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;
+	line-height:150%;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:23.0pt;
+	line-height:16.0pt;
+	font-size:11.5pt;
+	font-family:宋体;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"批注框文本 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:9.0pt;
+	font-family:宋体;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:隶书;
+	color:black;}
+p.CM34, li.CM34, div.CM34
+	{mso-style-name:CM34;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:32.75pt;
+	margin-left:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:隶书;}
+p.CM2, li.CM2, div.CM2
+	{mso-style-name:CM2;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:15.0pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:隶书;}
+p.CM35, li.CM35, div.CM35
+	{mso-style-name:CM35;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:隶书;}
+p.CM6, li.CM6, div.CM6
+	{mso-style-name:CM6;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:15.0pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:隶书;}
+p.CM10, li.CM10, div.CM10
+	{mso-style-name:CM10;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:15.0pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:隶书;}
+p.bt1, li.bt1, div.bt1
+	{mso-style-name:bt1;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:173%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:宋体;
+	font-weight:bold;}
+p.oraclezw, li.oraclezw, div.oraclezw
+	{mso-style-name:oraclezw;
+	mso-style-link:"oraclezw Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	line-height:18.0pt;
+	layout-grid-mode:char;
+	font-size:10.5pt;
+	font-family:宋体;}
+span.oraclezwChar
+	{mso-style-name:"oraclezw Char";
+	mso-style-link:oraclezw;
+	font-family:宋体;}
+span.a
+	{mso-style-name:"批注框文本 字符";
+	mso-style-link:批注框文本;
+	font-family:宋体;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 89.85pt 72.0pt 89.85pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple" style="text-justify-trim:punctuation">
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+
+
+<p class="MsoNormal" align="center" style="page-break-after:avoid"><a name="_Toc293298246"><span lang="ZH-CN" style="font-size:14.0pt;font-family:黑体">实验一
+</span></a><span style="font-size:18.0pt;font-family:黑体">&nbsp;Oracle<span lang="ZH-CN">数据库管理</span></span><span lang="ZH-CN" style="font-size:14.0pt;
+font-family:黑体">基础</span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:172%;page-break-after:avoid"><b><span lang="ZH-CN" style="font-size:12.0pt;line-height:172%;font-family:宋体">一、实验目的</span></b></p>
+
+<p class="MsoNormal" style="margin-left:15.75pt;text-indent:-15.75pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-family:&quot;Calibri&quot;,sans-serif">Oracle</span><span lang="ZH-CN" style="font-family:宋体">的安装</span></p>
+
+<p class="MsoNormal" style="margin-left:15.75pt;text-indent:-15.75pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-family:&quot;Calibri&quot;,sans-serif">Oracle</span><span lang="ZH-CN" style="font-family:宋体">的启动与关闭</span></p>
+
+<p class="MsoNormal" style="margin-left:15.75pt;text-indent:-15.75pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-family:&quot;Calibri&quot;,sans-serif">Oracle</span><span lang="ZH-CN" style="font-family:宋体">数据的导入与导出</span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:172%;page-break-after:avoid"><b><span lang="ZH-CN" style="font-size:12.0pt;line-height:172%;font-family:宋体">二、实验内容</span></b></p>
+
+<p class="MsoNormal" style="margin-left:42.2pt;text-indent:-42.2pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-family:&quot;Calibri&quot;,sans-serif">Oracle</span><span lang="ZH-CN" style="font-family:宋体">的安装</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体">在</span><span style="font-family:&quot;Calibri&quot;,sans-serif">Windows</span><span lang="ZH-CN" style="font-family:宋体">或</span><span style="font-family:&quot;Calibri&quot;,sans-serif">Linux</span><span lang="ZH-CN" style="font-family:宋体">系统中安装</span><span style="font-family:&quot;Calibri&quot;,sans-serif">Oracle</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体">也可以</span><span style="font-family:&quot;Calibri&quot;,sans-serif">Windows</span><span lang="ZH-CN" style="font-family:宋体">系统中安装</span><span lang="ZH-CN" style="font-family:宋体;
+color:#101010">虚拟机，在虚拟机上安装</span><span style="color:#101010">Linux</span><span lang="ZH-CN" style="font-family:宋体;color:#101010">，再在</span><span style="color:#101010">Linux</span><span lang="ZH-CN" style="font-family:宋体;
+color:#101010">上安装</span><span style="color:#101010">Oracle</span><span lang="ZH-CN" style="font-family:宋体;color:#101010">。步骤如下：</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;text-autospace:none"><span style="color:#101010">a)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang="ZH-CN" style="font-family:宋体;color:#101010">安装</span><span style="color:#101010">virtualbox</span><span lang="ZH-CN" style="font-family:
+宋体;color:#101010">虚拟机。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;text-autospace:none"><span style="color:#101010">b)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang="ZH-CN" style="font-family:宋体;color:#101010">在虚拟机上安装</span><span style="color:#101010">Linux</span><span lang="ZH-CN" style="font-family:宋体;
+color:#101010">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;text-autospace:none"><span style="color:#101010">c)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang="ZH-CN" style="font-family:宋体;color:#101010">在</span><span style="color:#101010">Linux</span><span lang="ZH-CN" style="font-family:宋体;
+color:#101010">上安装</span><span style="color:#101010">Oracle</span><span lang="ZH-CN" style="font-family:宋体;color:#101010">。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><span style="color:#101010">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="margin-left:42.2pt;text-align:left;
+text-indent:-42.2pt;text-autospace:none"><span style="color:#101010">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:&quot;Calibri&quot;,sans-serif">Oracle</span><span lang="ZH-CN" style="font-family:宋体">的启动与关闭</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;text-autospace:none"><span style="color:#101010">a)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang="ZH-CN" style="font-family:宋体">启动数据库的命令</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="font-size:12.0pt;color:#101010">Startup</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="font-size:12.0pt;color:#101010">Startup
+nomount</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="font-size:12.0pt;color:#101010">Startup
+mount</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="font-size:12.0pt;color:#101010">Alter
+database mount</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="font-size:12.0pt;color:#101010">Alter
+database open</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="color:#101010">&nbsp;</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:-21.0pt;text-autospace:none"><span style="color:#101010">b)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang="ZH-CN" style="font-family:宋体">关闭数据库的命令</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="font-size:12.0pt;color:#101010">shutdown
+[normal]</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="font-size:12.0pt;color:#101010">shutdown
+transactional</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="font-size:12.0pt;color:#101010">shutdown
+immediate</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:21.0pt;text-align:left;
+text-indent:0cm;text-autospace:none"><span style="font-size:12.0pt;color:#101010">shutdown
+abort</span></p>
+
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="color:#101010">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="margin-left:42.2pt;text-align:left;
+text-indent:-42.2pt;text-autospace:none"><span style="color:#101010">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span lang="ZH-CN" style="font-family:宋体">用</span><span style="font-family:&quot;Calibri&quot;,sans-serif">IMP</span><span lang="ZH-CN" style="font-family:宋体">与</span><span style="font-family:&quot;Calibri&quot;,sans-serif">EXP</span><span lang="ZH-CN" style="font-family:宋体">导入与导出数据</span></p>
+
+<p class="MsoNormal" style="text-indent:46.2pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">C:\&gt;imp help=y</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">C:\&gt;exp help=y</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="margin-left:0cm;text-indent:14.05pt"><span style="font-family:&quot;Arial&quot;,sans-serif">&#8226;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span>Scott<span lang="ZH-CN" style="font-family:宋体">将自己的表导出</span></p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">EXP scott/tiger FILE=
+d:\scott1.dmp TABLES=(dept,emp)</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="margin-left:0cm;text-indent:14.05pt"><span style="font-family:&quot;Arial&quot;,sans-serif">&#8226;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span>system<span lang="ZH-CN" style="font-family:宋体">将</span>scott<span lang="ZH-CN" style="font-family:宋体">的表导出</span></p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">EXP system/manager
+FILE=d:\scott2.dmp TABLES=(scott.dept,scott.emp)</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="margin-left:0cm;text-indent:14.05pt"><span style="font-family:&quot;Arial&quot;,sans-serif">&#8226;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span>Scott<span lang="ZH-CN" style="font-family:宋体">将自己的模式导出</span></p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">EXP scott/tiger
+FILE=d:\scott3.dmp OWNER=scott</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="margin-left:0cm;text-indent:14.05pt"><span style="font-family:&quot;Arial&quot;,sans-serif">&#8226;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span><span lang="ZH-CN" style="font-family:宋体">从导出文件</span>scott3.dmp<span lang="ZH-CN" style="font-family:宋体">中导入表</span>dept</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">IMP scott/tiger
+FILE=d:\scott3.dmp TABLES=(dept)</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="margin-left:0cm;text-indent:14.05pt"><span style="font-family:&quot;Arial&quot;,sans-serif">&#8226;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span><span lang="ZH-CN" style="font-family:宋体">从</span>scott3.dmp<span lang="ZH-CN" style="font-family:宋体">中将</span>dept<span lang="ZH-CN" style="font-family:宋体">表导入到</span>user1<span lang="ZH-CN" style="font-family:
+宋体">的模式中</span></p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">IMP system/manager
+FILE=d:\scott3.dmp&nbsp; IGNORE=y TABLES=(dept) TOUSER=(user1)</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoNormal" align="left" style="margin-left:42.2pt;text-align:left;
+text-indent:-42.2pt;text-autospace:none"><span style="color:#101010">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span lang="ZH-CN" style="font-family:宋体">用</span>SQL*loader<span lang="ZH-CN" style="font-family:宋体">导入数据</span></p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">SQLLDR keyword=value
+[,keyword=value,...]</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt"><span lang="ZH-CN" style="font-family:宋体">数据源文件</span>emp.dat<span lang="ZH-CN" style="font-family:
+宋体">：</span>(<span lang="ZH-CN" style="font-family:宋体">以逗号分隔各个数据项</span>)<span lang="ZH-CN" style="font-family:宋体">：</span></p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">7369,SMITH,CLERK,7902,1980-12-17
+00:00:00,800,,20</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">7499,ALLEN,SALESMAN,7698,1981-02-20
+00:00:00,1600,300,30</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">………</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">7934,MILLER,CLERK,7782,1982-01-23
+00:00:00,1300,,10</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt"><span lang="ZH-CN" style="font-family:宋体">控制文件</span>emp.ctl<span lang="ZH-CN" style="font-family:
+宋体">：</span>(<span lang="ZH-CN" style="font-family:宋体">将</span>emp.dat<span lang="ZH-CN" style="font-family:宋体">中的数据插入到表</span>emp1<span lang="ZH-CN" style="font-family:宋体">中</span>)</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">load data</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">infile
+'/home/oracle/sqlload/emp.dat'</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">insert&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+--insert <span lang="ZH-CN" style="font-family:宋体">插入表必须是空表，非空表用</span>append</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">into table
+emp1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+--emp1<span lang="ZH-CN" style="font-family:宋体">与</span>emp<span lang="ZH-CN" style="font-family:宋体">结构相同</span></p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">fields terminated by ','</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">optionally enclosed by '"'</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">(empno,ename,job,mgr,hiredate,comm,sal,deptno)</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt"><span lang="ZH-CN" style="font-family:宋体">在命令提示符下执行如下命令：</span></p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">sqlldr&nbsp; scott/tiger&nbsp;
+control=emp.ctl&nbsp;&nbsp; log=emp.log</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">&nbsp;</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt"><span lang="ZH-CN" style="font-family:宋体">上例的另一种形式是将数据源和控制文件合并在</span>.ctl<span lang="ZH-CN" style="font-family:宋体">里描述：</span></p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">load data</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">infile *</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">append</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">into table emp1</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">fields terminated&nbsp;
+by&nbsp;&nbsp; ','</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">optionally enclosed by '"'</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">(empno,ename,job,mgr,hiredate,comm,sal,deptno)</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">begindata</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">7369,SMITH,CLERK,7902,1980-12-17
+00:00:00,800,,20</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">7499,ALLEN,SALESMAN,7698,1981-02-20
+00:00:00,1600,300,30</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">………</p>
+
+<p class="MsoBodyText" style="text-indent:21.0pt">7934,MILLER,CLERK,7782,1982-01-23
+00:00:00,1300,,10</p>
+
+<p class="MsoBodyText" style="text-indent:21.1pt"><b>&nbsp;</b></p>
+
+</div>
+<br>
+<hr>
+<!-- Creating a footer -->
+<footer align="center"> &#169; 2017 - Guo Yunfei - All rights reserved </footer>
+
+
+
+</body></html>

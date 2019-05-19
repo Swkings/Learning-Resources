@@ -1,0 +1,1834 @@
+
+<!-- saved from url=(0041)http://172.22.112.234/orclguide/orcl2.htm -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 14">
+<meta name="Originator" content="Microsoft Word 14">
+<link rel="File-List" href="http://172.22.112.234/orclguide/orcl2.files/filelist.xml">
+<link rel="Edit-Time-Data" href="http://172.22.112.234/orclguide/orcl2.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>实验2</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>guoyunfei</o:Author>
+  <o:LastAuthor>guoyunfei</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2017-09-22T13:55:00Z</o:Created>
+  <o:LastSaved>2017-09-22T14:01:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>851</o:Words>
+  <o:Characters>4853</o:Characters>
+  <o:Company>Microsoft</o:Company>
+  <o:Lines>40</o:Lines>
+  <o:Paragraphs>11</o:Paragraphs>
+  <o:CharactersWithSpaces>5693</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel="themeData" href="http://172.22.112.234/orclguide/orcl2.files/themedata.thmx">
+<link rel="colorSchemeMapping" href="http://172.22.112.234/orclguide/orcl2.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:Helvetica-Narrow-Bold;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:Arial;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:等线;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:宋体;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"页眉 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:宋体;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"页脚 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:宋体;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"批注框文本 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:宋体;}
+span.Char
+	{mso-style-name:"页眉 Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;}
+span.Char0
+	{mso-style-name:"页脚 Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;}
+span.Char1
+	{mso-style-name:"批注框文本 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:批注框文本;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:宋体;}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("orcl2.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("orcl2.files/header.htm") fcs;
+	mso-endnote-separator:url("orcl2.files/header.htm") es;
+	mso-endnote-continuation-separator:url("orcl2.files/header.htm") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2049"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang="EN-US" style="tab-interval:36.0pt">
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+
+<p class="MsoNormal" style="page-break-after:avoid"><span lang="ZH-CN" style="font-size:14.0pt;font-family:黑体">实验二</span><span style="font-size:14.0pt;
+font-family:黑体"> Oracle<span lang="ZH-CN">函数和表达式</span></span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:170%;page-break-after:avoid"><b><span lang="ZH-CN" style="font-size:12.0pt;line-height:170%;font-family:宋体">一．目的</span></b></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">掌握</span><span style="font-family:宋体">Oracle
+SQL<span lang="ZH-CN">。</span></span></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">掌握</span><span style="font-family:宋体">Oracle <span lang="ZH-CN">函数与表达式的使用。</span></span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:170%;page-break-after:avoid"><b><span lang="ZH-CN" style="font-size:12.0pt;line-height:170%;font-family:宋体">二．应该掌握的</span></b><b><span style="font-size:12.0pt;line-height:170%;font-family:宋体">Oracle<span lang="ZH-CN">函数</span></span></b></p>
+
+<p><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">1.
+Numeric Functions</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">ABS</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">CEIL</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">EXP</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">FLOOR</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">LN</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">LOG</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">MOD</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">POWER</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">ROUND (number)</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">SIGN</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">SQRT</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">TRUNC (number)</span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">2.
+Character Functions Returning Character Values</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">CHR</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">CONCAT</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">INITCAP</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">LOWER</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">LPAD</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">LTRIM</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">REPLACE</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">RPAD</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">RTRIM</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">SUBSTR</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">TRANSLATE</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">TRIM</span></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-size:11.0pt;font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">UPPER</span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">3.
+Character Functions Returning Number Values</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">ASCII</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">INSTR</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">LENGTH</span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:170%;page-break-after:avoid"><b><span style="font-size:11.0pt;line-height:170%;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">4.
+Datetime Functions</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">ADD_MONTHS</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">EXTRACT (datetime)</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">LAST_DAY</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">MONTHS_BETWEEN</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">NEXT_DAY</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">ROUND (date)</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">SYSDATE</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">TRUNC (date)</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;color:mediumblue">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">5. General
+Comparison Functions</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">GREATEST</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">LEAST</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;color:mediumblue">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">6. Conversion
+Functions</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">TO_CHAR (datetime)</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">TO_CHAR (number)</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">TO_DATE</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">TO_NUMBER</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;color:mediumblue">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">7. Encoding and
+Decoding Functions</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">DECODE</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;color:mediumblue">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">8. NULL-Related
+Functions</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">COALESCE</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">NULLIF</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">NVL</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">NVL2</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;color:mediumblue">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">9. Environment
+and Identifier Functions</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">UID</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">USER</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;color:mediumblue">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">10. Aggregate
+Functions</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">AVG</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">COUNT</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">DENSE_RANK</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">MAX</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">MIN</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">RANK</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">SUM</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-autospace:none"><b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;">11. Analytic</span></b><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;"> <b>Functions</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">AVG</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">COUNT</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">DENSE_RANK</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">MAX</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">MIN</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">RANK</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:mediumblue">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:mediumblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">SUM</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;text-autospace:none"><span style="font-size:11.0pt;
+font-family:Symbol;color:black">·</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:11.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;
+color:mediumblue">ROW_NUMBER</span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:170%;page-break-after:avoid"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">函数的详细介绍参见</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">《</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Oracle
+Database SQL Language Reference.pdf </span><span lang="ZH-CN" style="font-family:
+宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">》之</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“ 5 Functions”</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">。</span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:170%;page-break-after:avoid"><b><span lang="ZH-CN" style="font-size:12.0pt;line-height:170%;font-family:宋体">三．示例</span></b></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">先将</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">guo</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">模式中的</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> S , C , SC
+,&nbsp; REG</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">表等复制到自己的模式中。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">S</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">：</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">学生基本情况表，有学号、姓名、性别、专业、生日、状态等列。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">C</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">：</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">课程基本情况表，有课程号、课程名称、学分、考试成绩在总评成绩中所占比例等列。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SC</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">：</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">成绩表，有学号、课程号、平时成绩、考试成绩、总评成绩、考试时间等列。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">REG</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">：注册信息表，有学号、</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">注册日期等列。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1</span><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">.&nbsp; </span></b><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">translate </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">与</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">replace</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SELECT
+translate('</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">我是中国人</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">我爱中国</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">', '</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">中国</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">', 'China') , </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+translate ('I am Chinese, I love China', 'China', '</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">中国</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">') "Translate example" </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">FROM
+DUAL;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">示例证明是按照字符来处理，不是按照字节来处理，如果</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">to_string</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">的字符数比</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">from_string</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">多的话，多出的字符数似乎没有什么用处，也不会引发异常。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">将</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">translate</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">换成</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">replace</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">函数，比较结果：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SELECT
+replace('</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">我是中国人</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">我爱中国</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">', '</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">中国</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">', 'China') ,</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+replace('I am Chinese, I love China', 'China', '</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">中国</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">') "Replace example" </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">FROM
+DUAL;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2</span><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">. </span></b><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">在银行转帐时经常看见账户人只显示姓名的最后一个字，其余的用星号代替，可用</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">replace</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">函数实现：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SELECT
+name, replace(name,substr(name,1,length(name) -
+1),rpad('*',length(name)-1,'*')) xm1</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">FROM s;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3</span><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">.&nbsp; </span></b><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">将所有姓</span><span style="font-family:等线">“</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">刘</span><span style="font-family:等线">”</span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">、</span><span style="font-family:等线">“</span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">陈</span><span style="font-family:等线">”</span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">和</span><span style="font-family:等线">“</span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">罗</span><span style="font-family:等线">”</span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">的学生的注册日期提前一年。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">update
+reg </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">set
+regdate = add_months(regdate,12)</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">where
+sno in (select sno from s where substr(name,1,1) in ('</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">刘</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">','</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">陈</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">','</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">罗</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">'));</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">4</span><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">. </span></b><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">将所有</span><span style="font-family:等线">“</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">网络工程</span><span style="font-family:等线">”</span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">的女学生的注册日期改成当月的</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">号。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">update
+reg </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">set
+regdate = trunc(regdate,'month')</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">where
+sno in (select sno from s where speciality='</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">网络工程</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">' and gender='</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">女</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">');</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5</span><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">. </span></b><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">按年、按月、按周、按日进行统计分析</span></p>
+
+<p class="MsoNormal"><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">.</span></b><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">按年</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">select
+to_char(regdate,'yyyy') </span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">年份</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> ,count(*) </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">注册人数</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">from reg
+</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">group by
+to_char(regdate,'yyyy') </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">order by
+</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">年份</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">.</span></b><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">按月</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">select
+to_char(regdate,'yyyy-mm') </span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">月份</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> ,count(*) </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">注册人数</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">from reg
+</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">group by
+to_char(regdate,'yyyy-mm') </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">order by
+</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">月份</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">.</span></b><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">按周</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">select
+to_char(regdate,'yyyy') </span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">年份</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,to_char(regdate,'iw') </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">周</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> ,count(*) </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">注册人数</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">from reg
+</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">group by
+to_char(regdate,'yyyy'),to_char(regdate,'iw') </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">order by
+</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">年份</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">周</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">6</span><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">. </span></b><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">在</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SQL</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">疑难问题中，</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">DECODE</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">函数常常发挥非常灵活的作用。其中的一个技术就是为了某种目的可以将一个表的<span style="color:red">行转换成列</span>。例如：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SELECT
+to_char(regdate,'YYYY') year,&nbsp;&nbsp; count(*) numofstudent</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">FROM
+reg&nbsp; </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">WHERE to_char(regdate,'YYYY')
+in ('2013','2014','2015');</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">显示结果：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">YEAR
+NUMOFSTUDENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">----
+---------------------- </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2014
+&nbsp;17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2015
+&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2013
+&nbsp;18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">利用</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">DECODE</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">，改写为：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SELECT
+sum(decode(to_char(regdate,'YYYY'),'2013',1,0)) "2013",</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+sum(decode(to_char(regdate,'YYYY'),'2014',1,0)) "2014",</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+sum(decode(to_char(regdate,'YYYY'),'2015',1,0)) "2015"</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">from reg</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">where
+to_char(regdate,'YYYY') in ('2013','2014','2015');</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">显示结果：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">--------------------
+----------------- ---------------------- </span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><b><span style="font-family:&quot;Helvetica-Narrow-Bold&quot;,&quot;sans-serif&quot;">7.
+</span></b><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">合并语句</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(MERGE)</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">7.1
+&nbsp;</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">开学初（</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2015</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">年</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">月</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">12</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">日）</span><span style="font-family:等线">“</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">网络工程与管理</span><span style="font-family:等线">”</span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">课程重修考试成绩单下：</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="margin-left:49.8pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+ mso-padding-alt:0cm 0cm 0cm 0cm">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:.05pt">
+  <td width="91" valign="top" style="width:68.4pt;border:solid black 1.0pt;
+  background:white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">学号</span></p>
+  </td>
+  <td width="96" valign="top" style="width:72.0pt;border:solid black 1.0pt;
+  border-left:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">分数</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;height:.05pt">
+  <td width="91" valign="top" style="width:68.4pt;border:solid black 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt">S002</p>
+  </td>
+  <td width="96" valign="top" style="width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt">45</p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2;height:.05pt">
+  <td width="91" valign="top" style="width:68.4pt;border:solid black 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt">S005</p>
+  </td>
+  <td width="96" valign="top" style="width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt">65</p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;height:.05pt">
+  <td width="91" valign="top" style="width:68.4pt;border:solid black 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt">S006</p>
+  </td>
+  <td width="96" valign="top" style="width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt">46</p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:.05pt">
+  <td width="91" valign="top" style="width:68.4pt;border:solid black 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt">S007</p>
+  </td>
+  <td width="96" valign="top" style="width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  white;padding:0cm 5.4pt 0cm 5.4pt;height:.05pt">
+  <p class="MsoNormal" style="mso-line-height-alt:.05pt">76</p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="text-indent:10.5pt"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">创建重修成绩表</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">sc_temp(sno,score)</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">，并</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">输入重修考试成绩。</span></p>
+
+<p class="MsoNormal" style="text-indent:10.5pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">7.2
+&nbsp;</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">将重修成绩表的记录合并进成绩表</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">sc</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">中</span></p>
+
+<p class="MsoNormal"><span style="mso-no-proof:yes"><img width="835" height="201" id="_x0000_i1030" src="./实验2_files/image001.png" alt="说明: 说明: G:\Edu\htdocs\orclguide\orcl2.files\image001.png"></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">7.4
+&nbsp;</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">将重修成绩表的记录按学校规定合并进成绩表</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">学校规定：对于重修成绩录入到成绩表中，重修成绩超过</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">60</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">的，总评成绩一律登记为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">60</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">。则执行以下命令：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">ROLLBACK;--</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">先回滚，恢复数据</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="mso-no-proof:yes"><img width="786" height="255" id="_x0000_i1029" src="./实验2_files/image002.png" alt="说明: 说明: G:\Edu\htdocs\orclguide\orcl2.files\image002.png"></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">7.5
+&nbsp;</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">将重修成绩表的记录按学校规定合并进成绩表</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">学校规定：考试及格的学生也可以重考，最后登记成绩时取两次考试的最高分。则执行以下命令：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">ROLLBACK;--</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">先回滚，恢复数据</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">假设：</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">S009</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">该课程已经及格，但参加了重修，重修成绩为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">85</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">。将该信息插入重修成绩表</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">sc_temp</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">中。</span></p>
+
+<p class="MsoNormal"><span style="mso-no-proof:yes"><img width="852" height="229" id="_x0000_i1028" src="./实验2_files/image003.png" alt="说明: 说明: G:\Edu\htdocs\orclguide\orcl2.files\image003.png"></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">7.6
+&nbsp;</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">将重修成绩表的记录按学校规定合并进成绩表</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">学校规定：一门课程如果重修还不及格，则删除成绩表相应记录。则执行以下命令：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">ROLLBACK;--</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">先回滚，恢复数据</span></p>
+
+<p class="MsoNormal"><span style="mso-no-proof:yes"><img width="707" height="231" id="_x0000_i1027" src="./实验2_files/image004.png" alt="说明: 说明: G:\Edu\htdocs\orclguide\orcl2.files\image004.png"></span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:170%;page-break-after:avoid"><b><span lang="ZH-CN" style="font-size:12.0pt;line-height:170%;font-family:宋体">四．作业</span></b></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1. </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">对于每个函数，写出三个不同实例。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2.
+&nbsp;</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">按天统计学生注册人数。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3.
+&nbsp;</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">将重修成绩表的记录按学校规定合并进成绩表</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">学校规定：没有参加该课程期末考试的学生，不能参加该课程的重修考试，即使考了也不登成绩。</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">4. </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">行列转换</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">有如下表格，含姓名、科目与成绩三列，表中学生语文、数学和英语三科的成绩，</span><span lang="ZH-CN" style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">例如</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="margin-left:22.8pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+ mso-padding-alt:0cm 0cm 0cm 0cm">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="102" valign="top" style="width:76.3pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">姓名</span></p>
+  </td>
+  <td width="85" valign="top" style="width:63.8pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">科目</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">成绩</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td width="102" valign="top" style="width:76.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span></p>
+  </td>
+  <td width="85" valign="top" style="width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">语文</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">80</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td width="102" valign="top" style="width:76.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span></p>
+  </td>
+  <td width="85" valign="top" style="width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">数学</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">70</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3">
+  <td width="102" valign="top" style="width:76.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span></p>
+  </td>
+  <td width="85" valign="top" style="width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">英语</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">60</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4">
+  <td width="102" valign="top" style="width:76.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student2</span></p>
+  </td>
+  <td width="85" valign="top" style="width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">语文</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">90</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5">
+  <td width="102" valign="top" style="width:76.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student2</span></p>
+  </td>
+  <td width="85" valign="top" style="width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">数学</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">80</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6">
+  <td width="102" valign="top" style="width:76.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student2</span></p>
+  </td>
+  <td width="85" valign="top" style="width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">英语</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">100</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:7;mso-yfti-lastrow:yes">
+  <td width="102" valign="top" style="width:76.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:等线">…</span></p>
+  </td>
+  <td width="85" valign="top" style="width:63.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:等线">…</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:等线">…</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:
+等线;mso-hansi-font-family:等线">请将它转换为如下的四列表格：</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="142" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">姓名</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">语文</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.55pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">数学</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.55pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:等线">英语</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td width="142" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">80</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">70</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">60</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td width="142" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student2</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">90</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">80</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">100</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes">
+  <td width="142" valign="top" style="width:106.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:等线">…</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:等线">…</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:等线">…</span></p>
+  </td>
+  <td width="142" valign="top" style="width:106.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="line-height:105%"><span style="font-family:等线">…</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5. </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">看图写</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SQL</span></p>
+
+<p class="MsoNormal"><span style="mso-no-proof:yes"><img width="443" height="257" id="_x0000_i1026" src="./实验2_files/image005.png" alt="说明: 说明: G:\Edu\htdocs\orclguide\orcl2.files\image005.png"></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">6.
+&nbsp;</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;
+mso-hansi-font-family:等线">创建视图，视图名依次命名为</span><span style="font-family:等线">obj2_1</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">、</span><span style="font-family:等线">obj2_</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">2</span><span lang="ZH-CN" style="font-family:宋体;
+mso-ascii-font-family:等线;mso-hansi-font-family:等线">、</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">… </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">、</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">obj2_5</span></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">查询每门课程考试成绩的第一名</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">可以并列</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">)</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">的学生的学号，按学号升序排列。</span></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">对选修</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">C13</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">课程的学生，按分数跳跃式排名</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">可以并列</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">)</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">，显示名次与学号，按名次、学号升序排列。</span></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">按平均分数对课程连续排名</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">可以并列</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">)</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">，显示名次、课程号与平均分数</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">保留</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">位小数</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">)</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">，按名次、课程号升序排列。</span></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">查询每门课程的课程号，以及每门课程考试成绩第一名（可以并列）的学生的姓名，按课程号与姓名升序排列。</span></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">列出工资在</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3500</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">到</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5000</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">之间的员工的姓名，但只取姓名的前</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">个字符，不足</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">个则以</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">*</span><span lang="ZH-CN" style="font-family:宋体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">补足，按姓名升序排列。</span></p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal" align="left" style="text-align:left;line-height:105%"><span style="font-size:12.0pt;line-height:105%;font-family:宋体;mso-bidi-font-family:
+宋体"><o:p>&nbsp;</o:p></span></p>
+
+<div class="MsoNormal" align="center" style="text-align:center;line-height:105%"><span style="font-size:12.0pt;line-height:105%;font-family:宋体;mso-bidi-font-family:
+宋体">
+
+<hr size="2" width="100%" align="center">
+
+</span></div>
+
+<p class="MsoNormal" align="left" style="text-align:left;line-height:105%"><span style="font-size:12.0pt;line-height:105%;font-family:宋体;mso-bidi-font-family:
+宋体"><!-- Creating a footer --></span></p><footer align="center">&#169; 2017 - Guo Yunfei - All
+rights reserved <o:p></o:p><p></p>
+
+</footer></div>
+
+
+
+
+</body></html>

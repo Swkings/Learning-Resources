@@ -1,0 +1,178 @@
+S1
+ sysname S1
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 1
+#
+ lldp global enable
+#
+ mvrp global enable
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+vlan 201
+#
+vlan 210
+ name zxy
+#
+vlan 240
+#
+vlan 250
+#
+ stp global enable
+#
+interface Bridge-Aggregation2
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ link-aggregation mode dynamic
+ mvrp enable
+
+#
+interface GigabitEthernet1/0/6
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ mvrp enable
+#
+interface GigabitEthernet1/0/7
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ port link-aggregation group 2
+#
+interface GigabitEthernet1/0/8
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ port link-aggregation group 2
+
+
+S2
+ sysname S2
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 1
+#
+ lldp global enable
+#
+ mvrp global enable
+#
+vlan 1
+#
+vlan 210
+#
+ stp global enable
+#
+interface Bridge-Aggregation1
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ mvrp enable
+#
+interface GigabitEthernet1/0/6
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ mvrp enable
+#
+interface GigabitEthernet1/0/7
+ port link-mode bridge
+ combo enable fiber
+#
+interface GigabitEthernet1/0/8
+ port link-mode bridge
+ combo enable fiber
+#
+interface GigabitEthernet1/0/9
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ port link-aggregation group 1
+#
+interface GigabitEthernet1/0/10
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ port link-aggregation group 1
+
+
+S3
+ version 7.1.075, Alpha 7571
+#
+ sysname S3
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 1
+#
+ lldp global enable
+#
+ mvrp global enable
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+ stp global enable
+#
+interface Bridge-Aggregation1
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ mvrp enable
+#
+interface Bridge-Aggregation2
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ link-aggregation mode dynamic
+ mvrp enable
+#
+interface GigabitEthernet1/0/7
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ port link-aggregation group 2
+#
+interface GigabitEthernet1/0/8
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ port link-aggregation group 2
+#
+interface GigabitEthernet1/0/9
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ port link-aggregation group 1
+#
+interface GigabitEthernet1/0/10
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan 1 200 to 300 400 to 500
+ combo enable fiber
+ port link-aggregation group 1
+
+
+
+
+

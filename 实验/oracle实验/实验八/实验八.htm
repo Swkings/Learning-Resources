@@ -1,0 +1,649 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)http://172.22.112.234/orclguide/orcl8.htm -->
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=gb2312"> 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"> 
+<STYLE>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Palatino;}
+@font-face
+	{font-family:Simsun;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+h2
+	{mso-style-link:"标题 2 Char";
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:171%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"页眉 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"页脚 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"正文文本 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoBodyTextFirstIndent, li.MsoBodyTextFirstIndent, div.MsoBodyTextFirstIndent
+	{mso-style-link:"正文首行缩进 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"批注框文本 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+span.2Char
+	{mso-style-name:"标题 2 Char";
+	mso-style-link:"标题 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Char
+	{mso-style-name:"页眉 Char";
+	mso-style-link:页眉;}
+span.Char0
+	{mso-style-name:"页脚 Char";
+	mso-style-link:页脚;}
+span.Char1
+	{mso-style-name:"正文文本 Char";
+	mso-style-link:正文文本;}
+span.Char2
+	{mso-style-name:"正文首行缩进 Char";
+	mso-style-link:正文首行缩进;}
+span.Char3
+	{mso-style-name:"批注框文本 Char";
+	mso-style-link:批注框文本;}
+p.SP16319659, li.SP16319659, div.SP16319659
+	{mso-style-name:"SP\.16\.319659";
+	margin-top:19.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:Palatino;}
+p.SP16319880, li.SP16319880, div.SP16319880
+	{mso-style-name:"SP\.16\.319880";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:Palatino;}
+p.SP16319693, li.SP16319693, div.SP16319693
+	{mso-style-name:"SP\.16\.319693";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:Palatino;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+span.SC16303111
+	{mso-style-name:"SC\.16\.303111";
+	font-family:Palatino;
+	color:black;}
+span.SC16303164
+	{mso-style-name:"SC\.16\.303164";
+	font-family:Courier;
+	color:black;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:841.9pt 595.3pt;
+	margin:2.0cm 2.0cm 2.0cm 2.0cm;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</STYLE>
+ </HEAD> 
+<BODY lang="ZH-CN">
+<DIV class="WordSection1" style="-ms-layout-grid: both loose 15.6pt none;">
+<P class="MsoNormal" style="page-break-after: avoid;"><SPAN style="font-family: 黑体; font-size: 14pt;">实验八 
+触发器</SPAN></P>
+<P class="MsoNormal" style="margin: 13pt 0cm; line-height: 171%; page-break-after: avoid;"><B><SPAN 
+style="line-height: 171%; font-family: 宋体; font-size: 12pt;">一．上机目的</SPAN></B></P>
+<P class="MsoNormal" style="text-indent: -15.75pt; margin-left: 15.75pt;"><SPAN 
+lang="EN-US">1</SPAN><SPAN style="font-family: 宋体;">．</SPAN><SPAN style="font-family: 宋体;">了解触发器的概念。</SPAN></P>
+<P class="MsoNormal" style="text-indent: -15.75pt; margin-left: 15.75pt;"><SPAN 
+lang="EN-US">2</SPAN><SPAN style="font-family: 宋体;">．</SPAN><SPAN style="font-family: 宋体;">熟悉触发器的基本用法。</SPAN></P>
+<H2><SPAN 
+style="line-height: 171%; font-family: 黑体; font-size: 12pt;">二．示例</SPAN></H2>
+<P align="left" class="MsoNormal" style="text-align: left;"><B><SPAN style="color: black; font-family: 宋体;">例</SPAN></B><B><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Arial","sans-serif";'>1:</SPAN></B><SPAN 
+lang="EN-US" style="color: black; font-family: Simsun;">&nbsp;</SPAN><SPAN 
+style="color: black; font-family: 宋体;">建立一个触发器，当职工表</SPAN><SPAN lang="EN-US" 
+style='color: black; font-family: "Arial","sans-serif";'>&nbsp;emp&nbsp;</SPAN><SPAN 
+style="color: black; font-family: 宋体;">表被删除一条记录时，把被删除记录写到职工表删除日志表</SPAN><SPAN 
+lang="EN-US" style="color: black; font-family: Simsun;">emp_his</SPAN><SPAN 
+style="color: black; font-family: 宋体;">中去。</SPAN><SPAN lang="EN-US" style="color: black; font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">CREATE&nbsp;TABLE&nbsp;emp_his&nbsp;AS&nbsp;SELECT&nbsp;*&nbsp;FROM&nbsp;EMP&nbsp;WHERE&nbsp;<B>1</B>=<B>2</B>;&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;"><BR>
+CREATE&nbsp;OR&nbsp;REPLACE&nbsp;TRIGGER&nbsp;triger1&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;BEFORE&nbsp;DELETE&nbsp;--</SPAN><SPAN style="font-family: 宋体;">指定触发时机为删除操作前触发</SPAN><SPAN 
+lang="EN-US" 
+style="font-family: Simsun;"><BR>&nbsp;&nbsp;&nbsp;ON&nbsp;scott.emp&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;FOR&nbsp;EACH&nbsp;ROW&nbsp;&nbsp;&nbsp;--</SPAN><SPAN style="font-family: 宋体;">说明创建的是行级触发器</SPAN><SPAN 
+lang="EN-US" style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN 
+lang="EN-US" style="font-family: Simsun;"><BR>BEGIN<BR>
+&nbsp;&nbsp;&nbsp;--</SPAN><SPAN 
+style="font-family: 宋体;">将修改前数据插入到日志记录表</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN 
+lang="EN-US" style="font-family: Simsun;">del_emp</SPAN><SPAN lang="EN-US" 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">,</SPAN><SPAN 
+style="font-family: 宋体;">以供监督使用。</SPAN><SPAN lang="EN-US" style="font-family: Simsun;"><BR>&nbsp;&nbsp;&nbsp;INSERT&nbsp;INTO&nbsp;emp_his(deptno&nbsp;,&nbsp;empno,&nbsp;ename&nbsp;,&nbsp;job&nbsp;,mgr&nbsp;,&nbsp;sal&nbsp;,&nbsp;comm&nbsp;,&nbsp;hiredate&nbsp;)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VALUES(&nbsp;:old.deptno,&nbsp;:old.empno,&nbsp;:old.ename&nbsp;,&nbsp;:old.job,:old.mgr,&nbsp;:old.sal,&nbsp;:old.comm,&nbsp;:old.hiredate&nbsp;);<BR>
+END;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;"><BR></SPAN><SPAN 
+style="font-family: 宋体;">测试（注意观察错误信息与查询结果）：</SPAN><SPAN lang="EN-US" style="font-family: Simsun;"><BR>DELETE&nbsp;emp&nbsp;WHERE&nbsp;empno=<B>7788</B>;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">SELECT&nbsp;* FROM&nbsp;emp_his;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;"><BR>SELECT&nbsp;* FROM&nbsp;emp_his;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN style="font-family: 宋体;">删除：</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">DROPTRIGGERtrigger1;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><B><SPAN lang="EN-US" 
+style="font-family: 宋体;">&nbsp;</SPAN></B></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><B><SPAN style="font-family: 宋体;">例</SPAN></B><B><SPAN 
+lang="EN-US" style='font-family: "Arial","sans-serif";'>2</SPAN></B><B><SPAN 
+style="font-family: 宋体;">：</SPAN></B><SPAN 
+style="font-family: 宋体;">限制对</SPAN><SPAN lang="EN-US" style='font-family: "Arial","sans-serif";'>dept</SPAN><SPAN 
+style="font-family: 宋体;">表修改（包括</SPAN><SPAN lang="EN-US" style='font-family: "Arial","sans-serif";'>INSERT,DELETE,UPDATE</SPAN><SPAN 
+style="font-family: 宋体;">）的时间范围，即只允许在非工作时间修改</SPAN><SPAN lang="EN-US" style='font-family: "Arial","sans-serif";'>dept</SPAN><SPAN 
+style="font-family: 宋体;">表。</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">CREATE&nbsp;OR&nbsp;REPLACE&nbsp;TRIGGER&nbsp;triger2<BR>
+BEFORE&nbsp;INSERT&nbsp;OR&nbsp;DELETE&nbsp;OR&nbsp;UPDATE&nbsp;<BR>
+ON&nbsp;</SPAN><SPAN lang="EN-US" 
+style='font-family: "Arial","sans-serif";'>dept</SPAN><SPAN lang="EN-US" style="font-family: Simsun;"><BR>
+BEGIN<BR>&nbsp;IF&nbsp;(TO_CHAR(sysdate,'DAY')&nbsp;NOT IN&nbsp;('</SPAN><SPAN 
+style="font-family: 宋体;">星期六</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">',&nbsp;'</SPAN><SPAN 
+style="font-family: 宋体;">星期日</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">'))&nbsp;AND&nbsp;(TO_CHAR(sysdate,&nbsp;'HH24:MI')&nbsp;BETWEEN&nbsp;'08:00'&nbsp;AND&nbsp;'18:00')&nbsp;THEN<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAISE_APPLICATION_ERROR(-<B>20001</B>,&nbsp;'</SPAN><SPAN 
+style="font-family: 宋体;">上班时间，不能修改</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">dept</SPAN><SPAN 
+style="font-family: 宋体;">表</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">');<BR>&nbsp;END&nbsp;IF;<BR>END;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN style="font-family: 宋体;">测试（注意观察错误信息与查询结果）：</SPAN><SPAN 
+lang="EN-US" style="font-family: Simsun;"><BR>UPDATE</SPAN><SPAN lang="EN-US" 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">dept SET&nbsp;loc&nbsp;=&nbsp;'Shanghai</SPAN><SPAN 
+lang="EN-US">'</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;WHERE&nbsp;deptno&nbsp;=&nbsp;20;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;"><BR>DELETE&nbsp;FROM&nbsp;dept 
+WHERE&nbsp;deptno&nbsp;=&nbsp;20;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">INSERT INTO</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN 
+lang="EN-US" 
+style="font-family: Simsun;">deptVALUES&nbsp;(60,&nbsp;'Development</SPAN><SPAN 
+lang="EN-US">',</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">,&nbsp;'Shanghai</SPAN><SPAN 
+lang="EN-US">')</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">ALTERTRIGGERtrigger2DISABLE;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">INSERT INTO</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN 
+lang="EN-US" 
+style="font-family: Simsun;">deptVALUES&nbsp;(60,&nbsp;'Development</SPAN><SPAN 
+lang="EN-US">',</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">,&nbsp;'Shanghai</SPAN><SPAN 
+lang="EN-US">')</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">ROLLBACK;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><B><SPAN style="font-family: 宋体;">例</SPAN></B><B><SPAN 
+lang="EN-US" style='font-family: "Arial","sans-serif";'>3</SPAN></B><B><SPAN 
+style="font-family: 宋体;">：</SPAN></B><SPAN 
+style="font-family: 宋体;">限定只对部门号为</SPAN><SPAN lang="EN-US" style='font-family: "Arial","sans-serif";'>30</SPAN><SPAN 
+style="font-family: 宋体;">的记录进行行触发器操作。</SPAN></P>
+<P align="left" class="MsoNormal" 
+style="text-align: left; margin-bottom: 12pt;"><SPAN lang="EN-US" style="font-family: Simsun;">CREATE&nbsp;OR&nbsp;REPLACE&nbsp;TRIGGER&nbsp;trigger3<BR>
+BEFORE&nbsp;UPDATE&nbsp;OF&nbsp;sal,&nbsp;comm&nbsp; OR&nbsp;DELETE<BR>
+ON&nbsp;emp<BR>FOR&nbsp;EACH&nbsp;ROW<BR>
+WHEN&nbsp;(old.deptno&nbsp;=&nbsp;<B>30</B>)<BR>BEGIN<BR>&nbsp;CASE<BR>
+&nbsp;&nbsp;WHEN&nbsp;UPDATING&nbsp;('sal')&nbsp;THEN<BR>
+&nbsp;&nbsp;&nbsp;IF&nbsp;:new.sal&nbsp;&lt;&nbsp;:old.sal&nbsp;THEN<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAISE_APPLICATION_ERROR(-<B>20001</B>,&nbsp;'</SPAN><SPAN 
+style="font-family: 宋体;">部门</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">30</SPAN><SPAN 
+style="font-family: 宋体;">的人员的工资不能降</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">');<BR>
+&nbsp;&nbsp;&nbsp;END&nbsp;IF;<BR>
+&nbsp;&nbsp;WHEN&nbsp;UPDATING&nbsp;('comm')&nbsp;THEN<BR>
+&nbsp;&nbsp;&nbsp;IF&nbsp;:new.comm&nbsp;&lt;&nbsp;:old.comm&nbsp;THEN<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAISE_APPLICATION_ERROR(-<B>20002</B>,&nbsp;'</SPAN><SPAN 
+style="font-family: 宋体;">部门</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">30</SPAN><SPAN 
+style="font-family: 宋体;">的人员的奖金不能降</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">');<BR>
+&nbsp;&nbsp;&nbsp;END&nbsp;IF;<BR>&nbsp;&nbsp;WHEN&nbsp;DELETING&nbsp;THEN<BR>
+&nbsp;&nbsp;&nbsp;RAISE_APPLICATION_ERROR(-<B>20003</B>,&nbsp;'</SPAN><SPAN 
+style="font-family: 宋体;">不能删除部门<SPAN lang="EN-US">3</SPAN></SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">0</SPAN><SPAN 
+style="font-family: 宋体;">的人员记录</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">');<BR>
+&nbsp;END&nbsp;CASE;<BR>END;&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN style="font-family: 宋体;">测试（注意观察错误信息与查询结果）：</SPAN><SPAN 
+lang="EN-US" style="font-family: Simsun;"><BR>UPDATE</SPAN><SPAN lang="EN-US" 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">emp</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN 
+lang="EN-US" 
+style="font-family: Simsun;">SET&nbsp;sal&nbsp;=&nbsp;8000&nbsp;WHERE&nbsp;empno&nbsp;=&nbsp;7499;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;"><BR>
+DELETE&nbsp;FROM&nbsp;emp&nbsp;WHERE&nbsp;emp&nbsp;in&nbsp;(7499,7369);</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">ALTER TRIGGER trigger3 DISABLE;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">DELETE&nbsp;FROM&nbsp;emp&nbsp;WHERE&nbsp;emp&nbsp;in&nbsp;(7499,7369);</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">ROLLBACK;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><B><SPAN style="font-family: 宋体;">例</SPAN></B><B><SPAN 
+lang="EN-US" style='font-family: "Arial","sans-serif";'>4</SPAN></B><B><SPAN 
+style="font-family: 宋体;">：</SPAN></B><SPAN 
+style="font-family: 宋体;">利用行触发器实现级联更新。在修改了主表</SPAN><SPAN lang="EN-US" style='font-family: "Arial","sans-serif";'>dept</SPAN><SPAN 
+style="font-family: 宋体;">中的</SPAN><SPAN lang="EN-US" style='font-family: "Arial","sans-serif";'>deptno</SPAN><SPAN 
+style="font-family: 宋体;">之后（</SPAN><SPAN lang="EN-US" style='font-family: "Arial","sans-serif";'>AFTER</SPAN><SPAN 
+style="font-family: 宋体;">），级联的、自动的更新子表</SPAN><SPAN lang="EN-US" style='font-family: "Arial","sans-serif";'>emp</SPAN><SPAN 
+style="font-family: 宋体;">表中原来在该部门的员工的</SPAN><SPAN lang="EN-US" style='font-family: "Arial","sans-serif";'>deptno</SPAN><SPAN 
+style="font-family: 宋体;">。</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">CREATE&nbsp;OR&nbsp;REPLACE&nbsp;TRIGGER&nbsp;trigger4<BR>
+AFTER&nbsp;update&nbsp;OF&nbsp;deptno<BR>ON&nbsp;dept<BR>
+FOR&nbsp;EACH&nbsp;ROW<BR>BEGIN<BR>&nbsp;DBMS_OUTPUT.PUT_LINE('</SPAN><SPAN 
+style="font-family: 宋体;">旧的</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">deptno</SPAN><SPAN 
+style="font-family: 宋体;">值是</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">'||:old.deptno||'</SPAN><SPAN 
+style="font-family: 宋体;">、新的</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">deptno</SPAN><SPAN 
+style="font-family: 宋体;">值是</SPAN><SPAN lang="EN-US" style="font-family: Simsun;">'||:new.deptno);<BR>
+&nbsp;UPDATE&nbsp;emp&nbsp;SET&nbsp;deptno&nbsp;=&nbsp;:new.deptno<BR>
+&nbsp;WHERE&nbsp;deptno=&nbsp;:old.deptno;<BR>END;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN style="font-family: 宋体;">测试（注意观察错误信息与查询结果）：</SPAN><SPAN 
+lang="EN-US" style="font-family: Simsun;"><BR>UPDATE</SPAN><SPAN lang="EN-US" 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">dept SET&nbsp;loc&nbsp;=&nbsp;'Shanghai</SPAN><SPAN 
+lang="EN-US">'</SPAN><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;WHERE&nbsp;deptno&nbsp;=&nbsp;20;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;"><BR>DELETE&nbsp;FROM&nbsp;dept 
+WHERE&nbsp;deptno&nbsp;=&nbsp;20;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">UPDATE</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN 
+lang="EN-US" style="font-family: Simsun;">dept 
+SET&nbsp;deptno&nbsp;=&nbsp;70WHERE&nbsp;deptno&nbsp;=&nbsp;30;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">SELECT&nbsp;* FROM&nbsp; dept ;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">SELECT&nbsp;* FROM&nbsp; emp
+ WHERE&nbsp;deptno&nbsp;=&nbsp;30;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">SELECT&nbsp;* FROM&nbsp; emp
+ WHERE&nbsp;deptno&nbsp;=&nbsp;70;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">ROLLBACK;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">ALTERTRIGGERtrigger4DISABLE;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">UPDATE</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN><SPAN 
+lang="EN-US" style="font-family: Simsun;">dept 
+SET&nbsp;deptno&nbsp;=&nbsp;70WHERE&nbsp;deptno&nbsp;=&nbsp;30;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">SELECT&nbsp;* FROM&nbsp; dept ;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">SELECT&nbsp;* FROM&nbsp; emp
+ WHERE&nbsp;deptno&nbsp;=&nbsp;30;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">SELECT&nbsp;* FROM&nbsp; emp
+ WHERE&nbsp;deptno&nbsp;=&nbsp;70;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">ROLLBACK;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><B><SPAN style="font-family: 宋体;">例</SPAN></B><B><SPAN 
+lang="EN-US" style='font-family: "Arial","sans-serif";'>5</SPAN></B><B><SPAN 
+style="font-family: 宋体;">：</SPAN></B><SPAN lang="EN-US">Instead of </SPAN><SPAN 
+style="font-family: 宋体;">触发器。</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN style="font-family: 宋体;">新建视图：</SPAN><SPAN 
+lang="EN-US" 
+style="font-family: Simsun;"><BR>CREATE&nbsp;OR&nbsp;REPLACE&nbsp;VIEW&nbsp;emp_view&nbsp;AS&nbsp;<BR>
+&nbsp; 
+SELECT&nbsp;deptno,&nbsp;count(*)&nbsp;total_employeer,&nbsp;sum(sal)&nbsp;total_salary&nbsp;<BR>
+&nbsp; FROM&nbsp;emp&nbsp;GROUP&nbsp;BY&nbsp;deptno;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN style="font-family: 宋体;">测试（注意观察错误信息）：</SPAN><SPAN 
+lang="EN-US" 
+style="font-family: Simsun;"><BR>DELETE&nbsp;FROM&nbsp;emp_view&nbsp;WHERE&nbsp;deptno=<B>10</B>;<BR><BR></SPAN><SPAN 
+style="font-family: 宋体;">创建</SPAN><SPAN lang="EN-US">Instead of </SPAN><SPAN 
+style="font-family: 宋体;">触发器</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">CREATE&nbsp;OR&nbsp;REPLACE&nbsp;TRIGGER&nbsp;trigger5<BR>
+&nbsp;&nbsp;&nbsp;INSTEAD&nbsp;OF&nbsp;DELETE&nbsp;ON&nbsp;emp_view&nbsp;FOR&nbsp;EACH&nbsp;ROW<BR>
+BEGIN<BR>
+&nbsp;&nbsp;&nbsp;DELETE&nbsp;FROM&nbsp;emp&nbsp;WHERE&nbsp;deptno=&nbsp;:old.deptno;<BR>
+END&nbsp;;<B>&nbsp;<BR><BR></B></SPAN><SPAN 
+style="font-family: 宋体;">测试（注意观察错误信息与查询结果）：</SPAN><SPAN lang="EN-US" style="font-family: Simsun;"><BR>DELETE&nbsp;FROM&nbsp;emp_view&nbsp;WHERE&nbsp;deptno=10;<B>&nbsp;<BR><BR></B>SELECT&nbsp;* 
+FROM&nbsp; emp WHERE&nbsp;deptno&nbsp;=&nbsp;10;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN lang="EN-US" 
+style="font-family: Simsun;">ROLLBACK;</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><B><SPAN lang="EN-US" 
+style="color: black; font-family: Simsun;">&nbsp;</SPAN></B></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><B><SPAN style="color: black; font-family: 宋体;">例</SPAN></B><B><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Arial","sans-serif";'>6</SPAN></B><B><SPAN 
+style="color: black; font-family: 宋体;">：</SPAN></B><SPAN style="font-family: 宋体;">系统触发器<SPAN 
+style="color: black;">。</SPAN></SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><SPAN style="color: black; font-family: 宋体;">将操作</SPAN><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>CREATE</SPAN><SPAN 
+style="color: black; font-family: 宋体;">、</SPAN><SPAN lang="EN-US" style='color: black; font-family: "Times New Roman","serif";'>DROP</SPAN><SPAN 
+style="color: black; font-family: 宋体;">存储在</SPAN><SPAN lang="EN-US" style='color: black; font-family: "Times New Roman","serif";'>log_info</SPAN><SPAN 
+style="color: black; font-family: 宋体;">表</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt;"><SPAN 
+style="color: black; font-family: 宋体;">创建表</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>CREATE TABLE 
+log_info(</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;op_user 
+VARCHAR2(15),</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;op_date 
+VARCHAR2(19),</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;opr_type 
+VARCHAR2(15),</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;obj_name 
+VARCHAR2(15),</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;obj_type 
+VARCHAR2(15));</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt;"><SPAN 
+style="color: black; font-family: 宋体;">创建触发器</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; margin-left: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>CREATE OR REPLACE 
+TRIGGER trigger6</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; margin-left: 27pt;"><SPAN 
+lang="EN-US" style='color: black; font-family: "Times New Roman","serif";'>AFTER 
+CREATE OR DROP ON SCHEMA</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; margin-left: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>BEGIN</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; margin-left: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;INSERT INTO 
+log_info</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; margin-left: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;&nbsp;&nbsp;VALUES(USER,SYSDATE,SYS.DICTIONARY_OBJ_NAME,SYS.DICTIONARY_OBJ_OWNER,</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; margin-left: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;&nbsp;&nbsp;&nbsp;SYS.DICTIONARY_OBJ_TYPE);</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; margin-left: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>END;</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; margin-left: 27pt;"><SPAN 
+lang="EN-US" style="color: black; font-family: 宋体;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt;"><SPAN 
+style="color: black; font-family: 宋体;">测试语句</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>CREATE TABLE a(id 
+NUMBER);</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" style="color: black; font-family: 宋体;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>CREATE TYPE aa AS 
+OBJECT(id NUMBER);</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" style="color: black; font-family: 宋体;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" style='color: black; font-family: "Times New Roman","serif";'>DROP 
+TABLE a;</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" style="color: black; font-family: 宋体;">&nbsp;</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" style='color: black; font-family: "Times New Roman","serif";'>DROP 
+TYPE aa;</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt;"><SPAN 
+style="color: black; font-family: 宋体;">查看效果</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>SELECT * FROM 
+log_info;</SPAN></P>
+<H2><SPAN 
+style="line-height: 171%; font-family: 黑体; font-size: 12pt;">三．实验主要内容</SPAN></H2>
+<P class="MsoListParagraph" style="text-indent: 0cm;"><SPAN style="background: rgb(243, 243, 243); color: rgb(50, 62, 50); font-family: 宋体;">先创建如下基本表（如果不存在的话）：</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>create table 
+emp1&nbsp; as select * from emp</SPAN><SPAN style="color: black; font-family: 宋体;">；</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>create table 
+emp2&nbsp; as select * from emp</SPAN><SPAN style="color: black; font-family: 宋体;">；</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>create table 
+emp3&nbsp; as select * from emp</SPAN><SPAN style="color: black; font-family: 宋体;">；</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>create table 
+emp4&nbsp; as select * from emp</SPAN><SPAN style="color: black; font-family: 宋体;">；</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>create table 
+dept1&nbsp; as select * from dept</SPAN><SPAN style="color: black; font-family: 宋体;">；</SPAN></P>
+<P align="left" class="MsoNormal" style="background: white; text-align: left; line-height: 19.5pt; text-indent: 27pt;"><SPAN 
+lang="EN-US" 
+style='color: black; font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">将下面创建的触发器依次命名为<SPAN lang="EN-US">obj8</SPAN></SPAN><SPAN 
+lang="EN-US">_1</SPAN><SPAN style="font-family: 宋体;">、<SPAN 
+lang="EN-US">obj8</SPAN></SPAN><SPAN lang="EN-US">_2</SPAN><SPAN style="font-family: 宋体;">、</SPAN><SPAN 
+lang="EN-US">…</SPAN><SPAN style="font-family: 宋体;">、<SPAN 
+lang="EN-US">obj8</SPAN></SPAN><SPAN lang="EN-US">_6</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">1</SPAN><SPAN 
+style="font-family: 宋体;">．</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif"; font-size: 7pt;'>&nbsp;&nbsp;&nbsp;
+</SPAN><SPAN style="font-family: 宋体;">创建一个</SPAN><SPAN 
+lang="EN-US">emp1</SPAN><SPAN 
+style="font-family: 宋体;">表的插入或修改触发器，功能是：员工的工资不能超过自己的经理的工资，超过则报错误<SPAN style="background: rgb(243, 243, 243); color: rgb(50, 62, 50);">。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">2</SPAN><SPAN 
+style="font-family: 宋体;">．</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif"; font-size: 7pt;'>&nbsp;&nbsp;&nbsp;
+</SPAN><SPAN style="font-family: 宋体;">创建一个名为</SPAN><SPAN 
+lang="EN-US">dept_summary(deptno,emp_count,sal_sum)</SPAN><SPAN style="font-family: 宋体;">的表，保存每一个部门的人数与工资总额。创建一个触发器，当对</SPAN><SPAN 
+lang="EN-US">emp2</SPAN><SPAN style="font-family: 宋体;">表执行</SPAN><SPAN lang="EN-US">INSERT, 
+UPDATE, DELETE&nbsp;</SPAN><SPAN style="font-family: 宋体;">操作时，自动更新</SPAN><SPAN 
+lang="EN-US">dept_summary&nbsp;</SPAN><SPAN 
+style="font-family: 宋体;">表中的数据。</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">3</SPAN><SPAN 
+style="font-family: 宋体;">．</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif"; font-size: 7pt;'>&nbsp;&nbsp;&nbsp;
+</SPAN><SPAN style="font-family: 宋体;">创建一个</SPAN><SPAN 
+lang="EN-US">dept1</SPAN><SPAN 
+style="font-family: 宋体;">表的触发器，当删除一个部门时，同时也在</SPAN><SPAN 
+lang="EN-US">emp1</SPAN><SPAN 
+style="font-family: 宋体;">表中删除该部门所有的员工记录。</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">4</SPAN><SPAN 
+style="font-family: 宋体;">．</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif"; font-size: 7pt;'>&nbsp;&nbsp;&nbsp;
+</SPAN><SPAN style="font-family: 宋体;">有如下视图：</SPAN></P>
+<P class="MsoNormal"><SPAN 
+lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+create view empdept as select empno,ename,salary,deptno,dname&nbsp; from emp2
+ natural join dept 1</SPAN><SPAN style="font-family: 宋体;">；</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">创建一个</SPAN><SPAN lang="EN-US">empdept 
+</SPAN><SPAN style="font-family: 宋体;">视图的</SPAN><SPAN lang="EN-US">instead 
+of</SPAN><SPAN 
+style="font-family: 宋体;">触发器。当向该视图插入一条记录时，先判断该部门是否存在，若存在，则向</SPAN><SPAN lang="EN-US">emp2</SPAN><SPAN 
+style="font-family: 宋体;">表插入一条相应的员工记录；若不存在该部门，则先向</SPAN><SPAN 
+lang="EN-US">dept1</SPAN><SPAN 
+style="font-family: 宋体;">表插入一条相应的部门记录，再向</SPAN><SPAN 
+lang="EN-US">emp2</SPAN><SPAN 
+style="font-family: 宋体;">表插入一条相应的员工记录。当从该视图删除记录时，则从</SPAN><SPAN 
+lang="EN-US">emp2</SPAN><SPAN style="font-family: 宋体;">表中删除相应的员工记录。</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">5</SPAN><SPAN 
+style="font-family: 宋体;">．</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif"; font-size: 7pt;'>&nbsp;&nbsp;&nbsp;
+</SPAN><SPAN style="font-family: 宋体;">创建一个</SPAN><SPAN 
+lang="EN-US">emp3</SPAN><SPAN 
+style="font-family: 宋体;">表的触发器，功能是：当插入记录时，若</SPAN><SPAN 
+lang="EN-US">dept</SPAN><SPAN 
+style="font-family: 宋体;">表不存在相应的部门，则拒绝插入；当修改记录中部门号</SPAN><SPAN 
+lang="EN-US">deptno</SPAN><SPAN style="font-family: 宋体;">时，若</SPAN><SPAN lang="EN-US">dept1</SPAN><SPAN 
+style="font-family: 宋体;">表不存在相应的部门，则拒绝修改。也就是不定义外键，用触发器完成相应的约束。</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="EN-US">6</SPAN><SPAN 
+style="font-family: 宋体;">．</SPAN><SPAN lang="EN-US" style='font-family: "Times New Roman","serif"; font-size: 7pt;'>&nbsp;&nbsp;&nbsp;
+</SPAN><SPAN style="font-family: 宋体;">创建一个</SPAN><SPAN 
+lang="EN-US">emp4</SPAN><SPAN 
+style="font-family: 宋体;">表的触发器，功能是：当插入或修改记录时，将员工的姓名转换成大写字母。</SPAN></P></DIV></BODY></HTML>

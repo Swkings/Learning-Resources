@@ -1,0 +1,930 @@
+Route 1 
+
+ sysname Route 1 
+#
+ ip unreachables enable
+ ip ttl-expires enable
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface LoopBack0
+ ip address 1.1.1.1 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.12.1 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.13.1 255.255.255.0
+#
+bgp 64900
+ router-id 1.1.1.1
+ peer 2.2.2.2 as-number 64900
+ peer 2.2.2.2 connect-interface LoopBack0
+ peer 3.3.3.3 as-number 64900
+ peer 3.3.3.3 connect-interface LoopBack0
+ #
+ address-family ipv4 unicast
+  network 1.1.1.0 255.255.255.0
+  peer 2.2.2.2 enable
+  peer 3.3.3.3 enable
+#
+ ip route-static 0.0.0.0 0 192.168.13.2
+ ip route-static 2.2.2.0 24 192.168.12.2
+ ip route-static 3.3.3.0 24 192.168.13.2
+ ip route-static 12.12.12.0 24 192.168.13.2
+#
+
+Route 2
+#
+ sysname  Route 2
+#
+ ip unreachables enable
+ ip ttl-expires enable
+#
+interface LoopBack0
+ ip address 2.2.2.2 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.12.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.24.1 255.255.255.0
+#
+bgp 64900
+ router-id 2.2.2.2
+ peer 1.1.1.1 as-number 64900
+ peer 1.1.1.1 connect-interface LoopBack0
+ peer 3.3.3.3 as-number 64900
+ peer 3.3.3.3 connect-interface LoopBack0
+ peer 192.168.24.2 as-number 64910
+ #
+ address-family ipv4 unicast
+  network 2.2.2.0 255.255.255.0
+  peer 1.1.1.1 enable
+  peer 3.3.3.3 enable
+  peer 192.168.24.2 enable
+  peer 192.168.24.2 route-policy 1 export
+#
+route-policy 1 permit node 10
+ if-match ip address acl 2000
+ apply cost 100
+#
+route-policy 1 permit node 20
+
+#
+line vty 0 63
+ user-role network-operator
+#
+ ip route-static 0.0.0.0 0 192.168.24.2
+ ip route-static 1.1.1.0 24 192.168.12.1
+ ip route-static 3.3.3.0 24 192.168.12.1
+ ip route-static 12.12.12.0 24 192.168.24.2
+ ip route-static 192.168.13.0 24 192.168.12.1
+#
+acl basic 2000
+ rule 0 permit source 1.1.1.0 0.0.0.255
+
+Route 3
+
+ sysname Route 3
+#
+ ip unreachables enable
+ ip ttl-expires enable
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface LoopBack0
+ ip address 3.3.3.3 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.13.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.34.1 255.255.255.0
+#
+bgp 64900
+ router-id 3.3.3.3
+ peer 1.1.1.1 as-number 64900
+ peer 1.1.1.1 connect-interface LoopBack0
+ peer 2.2.2.2 as-number 64900
+ peer 2.2.2.2 connect-interface LoopBack0
+ peer 192.168.34.2 as-number 64910
+ #
+ address-family ipv4 unicast
+  network 3.3.3.0 255.255.255.0
+  peer 1.1.1.1 enable
+  peer 2.2.2.2 enable
+  peer 192.168.34.2 enable
+#
+ scheduler logfile size 16
+#
+ ip route-static 0.0.0.0 0 192.168.34.2
+ ip route-static 1.1.1.0 24 192.168.13.1
+ ip route-static 2.2.2.0 24 192.168.13.1
+ ip route-static 12.12.12.0 24 192.168.34.2
+ ip route-static 192.168.12.0 24 192.168.13.1
+
+Route 4
+
+sysname Route 4
+#
+ospf 1
+ import-route bgp
+ area 0.0.0.0
+  network 4.4.4.0 0.0.0.255
+  network 192.168.45.0 0.0.0.255
+#
+ ip unreachables enable
+ ip ttl-expires enable
+#
+interface LoopBack0
+ ip address 4.4.4.4 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.24.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.34.2 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+ ip address 192.168.45.1 255.255.255.0
+#
+bgp 64910
+ router-id 4.4.4.4
+ peer 5.5.5.5 as-number 64910
+ peer 5.5.5.5 connect-interface LoopBack0
+ peer 8.8.8.8 as-number 64910
+ peer 8.8.8.8 connect-interface LoopBack0
+ peer 9.9.9.9 as-number 64910
+ peer 9.9.9.9 connect-interface LoopBack0
+ peer 192.168.24.1 as-number 64900
+ peer 192.168.34.1 as-number 64900
+ #
+ address-family ipv4 unicast
+  peer 5.5.5.5 enable
+  peer 5.5.5.5 next-hop-local
+  peer 8.8.8.8 enable
+  peer 9.9.9.9 enable
+  peer 192.168.24.1 enable
+  peer 192.168.34.1 enable
+
+
+Route 5
+
+
+ sysname H3C
+#
+ospf 1
+ import-route rip 2
+ area 0.0.0.0
+  network 5.5.5.0 0.0.0.255
+  network 192.168.45.0 0.0.0.255
+  network 192.168.58.0 0.0.0.255
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 5.5.5.5 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.45.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.58.1 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+ ip address 192.168.56.1 255.255.255.0
+#
+interface GigabitEthernet5/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/1
+ port link-mode route
+ combo enable copper
+#
+bgp 64910
+ router-id 5.5.5.5
+ peer 4.4.4.4 as-number 64910
+ peer 4.4.4.4 connect-interface LoopBack0
+ peer 8.8.8.8 as-number 64910
+ peer 8.8.8.8 connect-interface LoopBack0
+ peer 9.9.9.9 as-number 64910
+ peer 9.9.9.9 connect-interface LoopBack0
+ peer 192.168.56.2 as-number 64905
+ #
+ address-family ipv4 unicast
+  peer 4.4.4.4 enable
+  peer 4.4.4.4 next-hop-local
+  peer 8.8.8.8 enable
+  peer 8.8.8.8 next-hop-local
+  peer 9.9.9.9 enable
+  peer 9.9.9.9 next-hop-local
+  peer 192.168.56.2 enable
+
+
+Route 6
+
+rip 1
+ undo summary
+ version 2
+ network 6.6.6.0 0.0.0.255
+ network 192.168.67.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 6.6.6.6 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.56.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.67.1 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+ ip address 192.168.68.1 255.255.255.0
+#
+interface GigabitEthernet5/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/1
+ port link-mode route
+ combo enable copper
+#
+bgp 64905
+ router-id 6.6.6.6
+ peer 7.7.7.7 as-number 64905
+ peer 7.7.7.7 connect-interface LoopBack0
+ peer 192.168.56.1 as-number 64910
+ peer 192.168.68.2 as-number 64910
+ #
+ address-family ipv4 unicast
+  import-route direct
+  import-route rip 1
+  peer 7.7.7.7 enable
+  peer 192.168.56.1 enable
+  peer 192.168.68.2 enable
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-operator
+#
+line class console
+ user-role network-admin
+#
+line class tty
+ user-role network-operator
+#
+line class vty
+ user-role network-operator
+#
+line aux 0
+ user-role network-operator
+#
+line con 0
+ user-role network-admin
+#
+line vty 0 63
+ user-role network-operator
+#
+ ip route-static 0.0.0.0 0 192.168.56.1
+
+Route 7
+
+rip 1
+ undo summary
+ version 2
+ network 7.7.7.0 0.0.0.255
+ network 192.168.67.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 7.7.7.7 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.67.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/1
+ port link-mode route
+ combo enable copper
+#
+bgp 64905
+ router-id 7.7.7.7
+ peer 6.6.6.6 as-number 64905
+ peer 6.6.6.6 connect-interface LoopBack0
+ #
+ address-family ipv4 unicast
+  peer 6.6.6.6 enable
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-operator
+#
+line class console
+ user-role network-admin
+#
+line class tty
+ user-role network-operator
+#
+line class vty
+ user-role network-operator
+#
+line aux 0
+ user-role network-operator
+#
+line con 0
+ user-role network-admin
+#
+line vty 0 63
+ user-role network-operator
+#
+ ip route-static 0.0.0.0 0 192.168.67.1
+
+Route 8
+ sysname H3C
+#
+ospf 1
+ area 0.0.0.0
+  network 8.8.8.0 0.0.0.255
+  network 192.168.58.0 0.0.0.255
+  network 192.168.89.0 0.0.0.255
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 8.8.8.8 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.58.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.68.2 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+ ip address 192.168.89.1 255.255.255.0
+#
+interface GigabitEthernet5/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/1
+ port link-mode route
+ combo enable copper
+#
+bgp 64910
+ router-id 8.8.8.8
+ peer 4.4.4.4 as-number 64910
+ peer 4.4.4.4 connect-interface LoopBack0
+ peer 5.5.5.5 as-number 64910
+ peer 5.5.5.5 connect-interface LoopBack0
+ peer 9.9.9.9 as-number 64910
+ peer 9.9.9.9 connect-interface LoopBack0
+ peer 192.168.68.1 as-number 64905
+ #
+ address-family ipv4 unicast
+  peer 4.4.4.4 enable
+  peer 5.5.5.5 enable
+  peer 9.9.9.9 enable
+  peer 192.168.68.1 enable
+
+
+
+Route 9
+
+#
+ sysname H3C
+#
+ospf 1
+ import-route bgp
+ area 0.0.0.0
+  network 9.9.9.0 0.0.0.255
+  network 192.168.89.0 0.0.0.255
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 9.9.9.9 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.89.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.119.1 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+ ip address 192.168.109.1 255.255.255.0
+#
+interface GigabitEthernet5/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/1
+ port link-mode route
+ combo enable copper
+#
+bgp 64910
+ router-id 9.9.9.9
+ peer 4.4.4.4 as-number 64910
+ peer 4.4.4.4 connect-interface LoopBack0
+ peer 5.5.5.5 as-number 64910
+ peer 5.5.5.5 connect-interface LoopBack0
+ peer 8.8.8.8 as-number 64910
+ peer 8.8.8.8 connect-interface LoopBack0
+ peer 192.168.109.2 as-number 64915
+ peer 192.168.119.2 as-number 64915
+ #
+ address-family ipv4 unicast
+  peer 4.4.4.4 enable
+  peer 5.5.5.5 enable
+  peer 8.8.8.8 enable
+  peer 8.8.8.8 next-hop-local
+  peer 192.168.109.2 enable
+  peer 192.168.119.2 enable
+#
+ scheduler logfile size 16
+
+
+Route 10
+ version 7.1.075, Alpha 7571
+#
+ sysname H3C
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 10.10.10.10 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.120.1 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.109.2 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/1
+ port link-mode route
+ combo enable copper
+#
+bgp 64915
+ router-id 10.10.10.10
+ peer 11.11.11.11 as-number 64915
+ peer 11.11.11.11 connect-interface LoopBack0
+ peer 12.12.12.12 as-number 64915
+ peer 12.12.12.12 connect-interface LoopBack0
+ peer 192.168.109.1 as-number 64910
+ #
+ address-family ipv4 unicast
+  network 10.10.10.0 255.255.255.0
+  peer 11.11.11.11 enable
+  peer 12.12.12.12 enable
+  peer 192.168.109.1 enable
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-operator
+#
+line class console
+ user-role network-admin
+#
+line class tty
+ user-role network-operator
+#
+line class vty
+ user-role network-operator
+#
+line aux 0
+ user-role network-operator
+#
+line con 0
+ user-role network-admin
+#
+line vty 0 63
+ user-role network-operator
+#
+ ip route-static 0.0.0.0 0 192.168.109.1
+ ip route-static 1.1.1.0 24 192.168.109.1
+ ip route-static 11.11.11.0 24 192.168.120.2
+ ip route-static 12.12.12.0 24 192.168.120.2
+ ip route-static 192.168.121.0 24 192.168.120.2
+#
+
+
+
+ Route 11 
+
+ sysname H3C
+#
+ospf 1
+ import-route bgp
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 11.11.11.11 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.119.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.121.1 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/1
+ port link-mode route
+ combo enable copper
+#
+bgp 64915
+ router-id 11.11.11.11
+ peer 10.10.10.10 as-number 64915
+ peer 10.10.10.10 connect-interface LoopBack0
+ peer 12.12.12.12 as-number 64915
+ peer 12.12.12.12 connect-interface LoopBack0
+ peer 192.168.119.1 as-number 64910
+ #
+ address-family ipv4 unicast
+  network 11.11.11.0 255.255.255.0
+  peer 10.10.10.10 enable
+  peer 12.12.12.12 enable
+  peer 192.168.119.1 enable
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-operator
+#
+line class console
+ user-role network-admin
+#
+line class tty
+ user-role network-operator
+#
+line class vty
+ user-role network-operator
+#
+line aux 0
+ user-role network-operator
+#
+line con 0
+ user-role network-admin
+#
+line vty 0 63
+ user-role network-operator
+#
+ ip route-static 0.0.0.0 0 192.168.119.1
+ ip route-static 1.1.1.0 24 192.168.119.1
+ ip route-static 10.10.10.0 24 192.168.121.2
+ ip route-static 12.12.12.0 24 192.168.121.2
+ ip route-static 192.168.120.0 24 192.168.121.2
+#
+domain name system
+
+Route 12 
+#
+ version 7.1.075, Alpha 7571
+#
+ sysname H3C
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 12.12.12.12 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.121.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.120.2 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/1
+ port link-mode route
+ combo enable copper
+#
+bgp 64915
+ router-id 12.12.12.12
+ peer 10.10.10.10 as-number 64915
+ peer 10.10.10.10 connect-interface LoopBack0
+ peer 11.11.11.11 as-number 64915
+ peer 11.11.11.11 connect-interface LoopBack0
+ #
+ address-family ipv4 unicast
+  network 12.12.12.0 255.255.255.0
+  peer 10.10.10.10 enable
+  peer 11.11.11.11 enable
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-operator
+#
+line class console
+ user-role network-admin
+#
+line class tty
+ user-role network-operator
+#
+line class vty
+ user-role network-operator
+#
+line aux 0
+ user-role network-operator
+#
+line con 0
+ user-role network-admin
+#
+line vty 0 63
+ user-role network-operator
+#
+ ip route-static 0.0.0.0 0 192.168.121.1
+ ip route-static 1.1.1.0 24 192.168.121.1
+ ip route-static 10.10.10.0 24 192.168.120.1
+ ip route-static 11.11.11.0 24 192.168.121.1

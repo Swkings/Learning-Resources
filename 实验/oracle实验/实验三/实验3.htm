@@ -1,0 +1,442 @@
+
+<!-- saved from url=(0041)http://172.22.112.234/orclguide/orcl3.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Palatino;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"标题 1 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+h2
+	{mso-style-link:"标题 2 Char";
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+h3
+	{mso-style-link:"标题 3 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"页眉 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"页脚 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"正文文本 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoBodyTextFirstIndent, li.MsoBodyTextFirstIndent, div.MsoBodyTextFirstIndent
+	{mso-style-link:"正文首行缩进 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"批注框文本 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+span.1Char
+	{mso-style-name:"标题 1 Char";
+	mso-style-link:"标题 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.2Char
+	{mso-style-name:"标题 2 Char";
+	mso-style-link:"标题 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.3Char
+	{mso-style-name:"标题 3 Char";
+	mso-style-link:"标题 3";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Char
+	{mso-style-name:"页眉 Char";
+	mso-style-link:页眉;}
+span.Char0
+	{mso-style-name:"页脚 Char";
+	mso-style-link:页脚;}
+span.Char1
+	{mso-style-name:"正文文本 Char";
+	mso-style-link:正文文本;}
+span.Char2
+	{mso-style-name:"正文首行缩进 Char";
+	mso-style-link:正文首行缩进;}
+span.Char3
+	{mso-style-name:"批注框文本 Char";
+	mso-style-link:批注框文本;}
+p.SP16319659, li.SP16319659, div.SP16319659
+	{mso-style-name:"SP\.16\.319659";
+	margin-top:19.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:Palatino;}
+p.SP16319880, li.SP16319880, div.SP16319880
+	{mso-style-name:"SP\.16\.319880";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:Palatino;}
+p.SP16319693, li.SP16319693, div.SP16319693
+	{mso-style-name:"SP\.16\.319693";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:Palatino;}
+span.oraclezwChar
+	{mso-style-name:"oraclezw Char";
+	mso-style-link:oraclezw;
+	font-family:宋体;}
+p.oraclezw, li.oraclezw, div.oraclezw
+	{mso-style-name:oraclezw;
+	mso-style-link:"oraclezw Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	line-height:18.0pt;
+	layout-grid-mode:char;
+	font-size:10.5pt;
+	font-family:宋体;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+span.SC16303111
+	{mso-style-name:"SC\.16\.303111";
+	font-family:Palatino;
+	color:black;}
+span.SC16303164
+	{mso-style-name:"SC\.16\.303164";
+	font-family:Courier;
+	color:black;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 2.0cm 2.0cm 2.0cm;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US">
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+
+<p class="MsoNormal" style="page-break-after:avoid"><span lang="ZH-CN" style="font-size:14.0pt;font-family:宋体">实验三</span><span style="font-size:14.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-size:14.0pt;font-family:宋体">模式对象和用户权限管理</span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:170%;page-break-after:avoid"><b><span lang="ZH-CN" style="font-size:12.0pt;line-height:170%;font-family:宋体">一．实验目的</span></b></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt;
+line-height:18.0pt;layout-grid-mode:char"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1.</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="ZH-CN" style="font-family:宋体">掌握</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">Oracle</span><span lang="ZH-CN" style="font-family:
+宋体">的常用对象的操作方法。会使用常用对象解决一些实际问题。</span></p>
+
+<p class="MsoListParagraph" style="margin-left:36.0pt;text-indent:-18.0pt"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2.</span></b><b><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span lang="ZH-CN" style="font-family:宋体">掌握</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Oracle</span><span lang="ZH-CN" style="font-family:宋体">的安全管理方法。</span></p>
+
+<p class="MsoNormal" style="margin-top:13.0pt;margin-right:0cm;margin-bottom:
+13.0pt;margin-left:0cm;line-height:170%;page-break-after:avoid"><b><span lang="ZH-CN" style="font-size:12.0pt;line-height:170%;font-family:宋体">二、实验主要内容</span></b></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1</span></b><b><span lang="ZH-CN" style="font-family:宋体">．</span></b><span lang="ZH-CN" style="font-family:宋体">索引，写出相应</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SQL</span><span lang="ZH-CN" style="font-family:宋体">命令。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span lang="ZH-CN" style="font-family:宋体">　<b>　创建索引</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">为</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span><span lang="ZH-CN" style="font-family:宋体">表建立主键。</span><span style="font-family:宋体">(</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span><span lang="ZH-CN" style="font-size:12.0pt;font-family:宋体">的结构与</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">S</span><span lang="ZH-CN" style="font-size:12.0pt;font-family:宋体">表一样</span><span style="font-family:宋体">)</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">为</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span><span lang="ZH-CN" style="font-family:宋体">表的</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">name</span><span lang="ZH-CN" style="font-family:宋体">创建索引，索引名为</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">“</span><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">obj3_1</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">为</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span><span lang="ZH-CN" style="font-family:宋体">表的</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">birth</span><span lang="ZH-CN" style="font-family:宋体">创建索引，并以降序排列，索引名为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“</span><span style="font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">obj3_2</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">为</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span><span lang="ZH-CN" style="font-family:宋体">表的</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">gender</span><span lang="ZH-CN" style="font-family:宋体">创建位图索引，索引名为</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">“</span><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">student_gender</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">_index”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">为</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span><span lang="ZH-CN" style="font-family:宋体">表的</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">gender</span><span lang="ZH-CN" style="font-family:宋体">与</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">name</span><span lang="ZH-CN" style="font-family:宋体">创建组合索引，索引名为</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">“</span><span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">obj3_3</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span lang="ZH-CN" style="font-family:宋体">　<b>　查看索引</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">利用数据字典视图</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">USER_INDEXES</span><span lang="ZH-CN" style="font-family:宋体">、</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">USER_IND_COLUMNS</span><span lang="ZH-CN" style="font-family:宋体">查看索引信息。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><b><span lang="ZH-CN" style="font-family:宋体">　　删除索引</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">删除索引</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“student_
+gender _index”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2</span></b><b><span lang="ZH-CN" style="font-family:宋体">．同义词</span></b><span lang="ZH-CN" style="font-family:宋体">，写出相应</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SQL</span><span lang="ZH-CN" style="font-family:宋体">命令。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span lang="ZH-CN" style="font-family:宋体">　<b>　创建同义词</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">创建</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">student1</span><span lang="ZH-CN" style="font-family:宋体">表的同义词，名为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“obj3_4”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">创建同义词</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">obj3_4</span><span lang="ZH-CN" style="font-family:宋体">的同义词，名为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“st1”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">创建视图</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">obj2_1</span><span lang="ZH-CN" style="font-family:宋体">的同义词，名为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“obj3_5”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">创建视图</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">obj2_5</span><span lang="ZH-CN" style="font-family:宋体">的公共同义词，公共同义词的命名规则：字符串“</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">obj3_</span><span lang="ZH-CN" style="font-family:宋体">”后面跟上你的学号。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:0cm"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span lang="ZH-CN" style="font-family:宋体">　<b>　查看同义词</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">利用数据字典视图</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">user_synonyms</span><span lang="ZH-CN" style="font-family:宋体">、</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">all_synonyms</span><span lang="ZH-CN" style="font-family:宋体">查看同义词信息。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span lang="ZH-CN" style="font-family:宋体">　<b>　删除同义词</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">删除同义词</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">st1</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3</span></b><b><span lang="ZH-CN" style="font-family:宋体">．序列</span></b><span lang="ZH-CN" style="font-family:宋体">，写出相应</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SQL</span><span lang="ZH-CN" style="font-family:宋体">命令。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span lang="ZH-CN" style="font-family:宋体">　<b>　创建序列</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">创建序列，该序列起始值</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">50</span><span lang="ZH-CN" style="font-family:宋体">，步长为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">10</span><span lang="ZH-CN" style="font-family:宋体">，不缓冲，序列名为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“obj3_6”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">创建序列，该序列最大值无限制，最小值为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1</span><span lang="ZH-CN" style="font-family:宋体">，步长为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1</span><span lang="ZH-CN" style="font-family:宋体">，序列名为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“obj3_7”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">创建序列，该序列起始值为</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">1000</span><span lang="ZH-CN" style="font-family:宋体">，步长为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2</span><span lang="ZH-CN" style="font-family:宋体">，最大值为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">10000</span><span lang="ZH-CN" style="font-family:宋体">，不可循环，序列名为</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">“obj3_8”</span><span lang="ZH-CN" style="font-family:
+宋体">。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span lang="ZH-CN" style="font-family:宋体">　<b>　查看序列</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">利用数据字典视图</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">user_SEQUENCES</span><span lang="ZH-CN" style="font-family:宋体">、</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">all_SEQUENCES</span><span lang="ZH-CN" style="font-family:宋体">查看序列信息。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span lang="ZH-CN" style="font-family:宋体">　　<b>引用序列</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">向</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">DEPT</span><span lang="ZH-CN" style="font-family:宋体">表中插入三条记录，利用序列</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">obj3_6</span><span lang="ZH-CN" style="font-family:
+宋体">生成部门编号。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><span lang="ZH-CN" style="font-family:宋体">　<b>　修改序列</b></span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">修改序列</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“obj3_6”</span><span lang="ZH-CN" style="font-family:宋体">，将该序列最大值设为</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">“82000”</span><span lang="ZH-CN" style="font-family:
+宋体">，最小值设为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“10”</span><span lang="ZH-CN" style="font-family:宋体">，步长设为</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“5”</span><span lang="ZH-CN" style="font-family:宋体">。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">修改序列</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“obj3_7”</span><span lang="ZH-CN" style="font-family:宋体">，将该序列最大值设为</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">“1000”</span><span lang="ZH-CN" style="font-family:
+宋体">。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><b><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">4</span></b><b><span lang="ZH-CN" style="font-family:宋体">．用户</span></b><span lang="ZH-CN" style="font-family:宋体">，在自己安装的</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">ORACLE</span><span lang="ZH-CN" style="font-family:宋体">系统中做实验，写出相应</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">SQL</span><span lang="ZH-CN" style="font-family:宋体">命令。</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.75pt"><b><span lang="ZH-CN" style="font-family:宋体">创建用户</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">创建一个用户，用户名为你自己姓名的汉语拼音，密码是你的学号。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">该用户授予一定的权限</span></p>
+
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><b><span lang="ZH-CN" style="font-family:宋体">　　授予用户权限</span></b></p>
+
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="ZH-CN" style="font-family:宋体">新开一个会话，以新创建的用户身份连接并对</span><span style="font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">scott</span><span lang="ZH-CN" style="font-family:
+宋体">中的</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">emp</span><span lang="ZH-CN" style="font-family:宋体">表进行查询、删除操作。如果权限不够，则授予相应权限。最后，回滚事务。</span></p>
+
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.75pt"><b><span lang="ZH-CN" style="font-family:宋体">修改用户信息</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">修改该用户的口令，然后用新口令重新连接。</span></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">封锁该用户的账号，然后解锁。</span></p>
+
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left"><b><span lang="ZH-CN" style="font-family:宋体">　　查询用户与权限信息</span></b></p>
+
+<p class="MsoListParagraph" align="left" style="margin-left:57.0pt;text-align:left;
+text-indent:-18.0pt"><span style="font-family:Wingdings">&#216;</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp; </span><span lang="ZH-CN" style="font-family:宋体">利用数据字典视图</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">dba_user</span><span lang="ZH-CN" style="font-family:宋体">、</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">user_sys_privs</span><span lang="ZH-CN" style="font-family:宋体">、</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">user_tab_privs</span><span lang="ZH-CN" style="font-family:宋体">、</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">user_role_privs</span><span lang="ZH-CN" style="font-family:宋体">、</span><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">session_privs</span><span lang="ZH-CN" style="font-family:宋体">查询用户与权限信息。</span></p>
+
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:21.75pt"><b><span lang="ZH-CN" style="font-family:宋体">删除用户</span></b></p>
+
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+</div>
+
+
+
+
+</body></html>

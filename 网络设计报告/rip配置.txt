@@ -1,0 +1,486 @@
+ Route 1
+sysname route1
+#
+rip 1
+ undo summary
+ version 2
+ network 1.0.0.0
+ network 55.0.0.0
+ network 192.168.12.0
+ network 192.168.13.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 1.1.1.1 255.255.255.0
+#
+interface LoopBack1
+ ip address 55.55.55.1 255.255.255.255
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.12.1 255.255.255.0
+ rip authentication-mode md5 rfc2082 cipher $c$3$x2s/8S6PLjJd4Bl0HsRi1RUEGyS4UCDe 1
+ rip metricin 5
+ rip version 2 multicast
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.13.1 255.255.255.0
+ rip metricout 5
+
+Route 2
+#
+ sysname route2
+#
+rip 1
+ undo summary
+ version 2
+ network 2.0.0.0
+ network 192.168.12.0
+ network 192.168.24.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+ ip address 192.168.24.1 255.255.255.0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 2.2.2.2 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.12.2 255.255.255.0
+ rip authentication-mode md5 rfc2082 cipher $c$3$+ctHARqfZI1O4SzVQBTI7ZEDipdojh5S 1
+
+Route 3
+#
+ sysname route3
+#
+rip 1
+ undo summary
+ version 2
+ network 3.0.0.0
+ network 192.168.13.0
+ network 192.168.34.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+ ip address 192.168.34.1 255.255.255.0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 3.3.3.3 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.13.2 255.255.255.0
+
+
+ Route 4
+ sysname route4
+#
+rip 1
+ undo summary
+ version 2
+ network 4.0.0.0
+ network 192.168.24.0
+ network 192.168.34.0
+ network 192.168.45.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+ ip address 192.168.24.2 255.255.255.0
+#
+interface Serial2/0
+ ip address 192.168.34.2 255.255.255.0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 4.4.4.4 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.45.1 255.255.255.0
+
+ Route 5
+
+ sysname route5
+#
+rip 1
+ undo summary
+ version 2
+ network 5.0.0.0
+ network 192.168.45.0
+ network 192.168.56.0
+ network 192.168.57.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+ ip address 192.168.56.1 255.255.255.0
+#
+interface Serial2/0
+ ip address 192.168.57.1 255.255.255.0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 5.5.5.5 255.255.255.0
+#
+interface LoopBack1
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.45.2 255.255.255.0
+
+Route 6
+rip 1
+ undo summary
+ version 2
+ network 6.0.0.0
+ network 192.168.56.0
+ network 192.168.68.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+ ip address 192.168.56.2 255.255.255.0
+#
+interface Serial2/0
+ ip address 192.168.68.1 255.255.255.0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 6.6.6.6 255.255.255.0
+
+
+ Route 7
+
+ sysname route7
+#
+rip 1
+ undo summary
+ version 2
+ network 7.0.0.0
+ network 192.168.57.0
+ network 192.168.78.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+ ip address 192.168.78.1 255.255.255.0
+#
+interface Serial2/0
+ ip address 192.168.57.2 255.255.255.0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 7.7.7.7 255.255.255.0
+
+Route 8
+ sysname route8
+#
+rip 1
+ undo summary
+ version 2
+ network 192.168.68.0
+ network 192.168.78.0
+ network 192.168.89.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+ ip address 192.168.78.2 255.255.255.0
+#
+interface Serial2/0
+ ip address 192.168.68.2 255.255.255.0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 8.8.8.8 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.89.1 255.255.255.0
+
+
+Route 9
+
+ sysname route9
+#
+rip 1
+ undo summary
+ version 2
+ network 9.0.0.0
+ network 192.168.89.0
+ network 192.168.109.0
+ network 192.168.119.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+ ip address 192.168.109.1 255.255.255.0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 9.9.9.9 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.89.2 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+ ip address 192.168.119.1 255.255.255.0
+
+Route 10
+
+#
+ sysname route10
+#
+rip 1
+ undo summary
+ version 2
+ network 10.0.0.0
+ network 192.168.109.0
+ network 192.168.120.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+ ip address 192.168.109.2 255.255.255.0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 10.10.10.10 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.120.1 255.255.255.0
+
+
+Route 11
+ sysname rooute11
+#
+rip 1
+ undo summary
+ version 2
+ network 11.0.0.0
+ network 192.168.119.0
+ network 192.168.121.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 11.11.11.11 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.121.1 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+ ip address 192.168.119.2 255.255.255.0
+
+
+Route 12 
+ sysname route12
+#
+rip 1
+ undo summary
+ version 2
+ network 12.0.0.0
+ network 55.0.0.0
+ network 192.168.120.0
+ network 192.168.121.0
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 12.12.12.12 255.255.255.0
+#
+interface LoopBack1
+ ip address 55.66.66.1 255.255.255.255
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.120.2 255.255.255.0
+ rip metricout 5
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.121.2 255.255.255.0
+ rip metricout 5
+

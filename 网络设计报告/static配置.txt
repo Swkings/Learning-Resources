@@ -1,0 +1,181 @@
+Route 1
+
+ ip route-static 0.0.0.0 0 192.168.13.2 preference 70
+ ip route-static 0.0.0.0 0 192.168.12.2
+#
+
+Route 2
+#
+ ip route-static 1.1.1.0 24 192.168.12.1
+ ip route-static 3.3.3.0 24 192.168.12.1
+ ip route-static 3.3.3.0 24 192.168.24.2
+ ip route-static 4.4.4.0 24 192.168.24.2
+ ip route-static 5.5.5.0 24 192.168.24.2
+ ip route-static 6.6.6.0 24 192.168.24.2
+ ip route-static 7.7.7.0 24 192.168.24.2
+ ip route-static 8.8.8.0 24 192.168.24.2
+ ip route-static 9.9.9.0 24 192.168.24.2
+ ip route-static 10.10.10.0 24 192.168.24.2
+ ip route-static 11.11.11.0 24 192.168.24.2
+ ip route-static 12.12.12.0 24 192.168.24.2
+#
+domain name system
+#
+
+Route  3
+
+ ip route-static 1.1.1.0 24 192.168.13.1
+ ip route-static 2.2.2.0 24 192.168.13.1
+ ip route-static 2.2.2.0 24 192.168.34.2
+ ip route-static 4.4.4.0 24 192.168.34.2
+ ip route-static 5.5.5.0 24 192.168.34.2
+ ip route-static 6.6.6.0 24 192.168.34.2
+ ip route-static 7.7.7.0 24 192.168.34.2
+ ip route-static 8.8.8.0 24 192.168.34.2
+ ip route-static 9.9.9.0 24 192.168.34.2
+ ip route-static 10.10.10.0 24 192.168.34.2
+ ip route-static 11.11.11.0 24 192.168.34.2
+ ip route-static 12.12.12.0 24 192.168.34.2
+#
+domain name system
+#
+
+Route  4
+
+#
+ ip route-static 1.1.1.0 24 192.168.24.1
+ ip route-static 1.1.1.0 24 192.168.34.1 preference 70
+ ip route-static 2.2.2.0 24 192.168.24.1
+ ip route-static 3.3.3.0 24 192.168.34.1
+ ip route-static 5.5.5.0 24 192.168.45.2
+ ip route-static 6.6.6.0 24 192.168.45.2
+ ip route-static 7.7.7.0 24 192.168.45.2
+ ip route-static 8.8.8.0 24 192.168.45.2
+ ip route-static 9.9.9.0 24 192.168.45.2
+ ip route-static 10.10.10.0 24 192.168.45.2
+ ip route-static 11.11.11.0 24 192.168.45.2
+ ip route-static 12.12.12.0 24 192.168.45.2
+#
+
+Route 5
+ user-role network-operator
+#
+ ip route-static 1.1.1.0 24 192.168.45.1
+ ip route-static 2.2.2.0 24 192.168.45.1
+ ip route-static 3.3.3.0 24 192.168.45.1
+ ip route-static 4.4.4.0 24 192.168.45.1
+ ip route-static 6.6.6.0 24 192.168.56.2
+ ip route-static 7.7.7.0 24 192.168.57.2
+ ip route-static 8.8.8.0 24 192.168.57.2 preference 70
+ ip route-static 8.8.8.0 24 192.168.56.2
+ ip route-static 9.9.9.0 24 192.168.57.2 preference 70
+ ip route-static 9.9.9.0 24 192.168.56.2
+ ip route-static 10.10.10.0 24 192.168.57.2 preference 70
+ ip route-static 10.10.10.0 24 192.168.56.2
+ ip route-static 11.11.11.0 24 192.168.57.2 preference 70
+ ip route-static 11.11.11.0 24 192.168.56.2
+ ip route-static 12.12.12.0 24 192.168.57.2 preference 70
+ ip route-static 12.12.12.0 24 192.168.56.2
+
+Route 6
+
+ ip route-static 1.1.1.0 24 192.168.56.1
+ ip route-static 2.2.2.0 24 192.168.56.1
+ ip route-static 3.3.3.0 24 192.168.56.1
+ ip route-static 4.4.4.0 24 192.168.56.1
+ ip route-static 5.5.5.0 24 192.168.56.1
+ ip route-static 7.7.7.0 24 192.168.56.1
+ ip route-static 7.7.7.0 24 192.168.68.2
+ ip route-static 8.8.8.0 24 192.168.68.2
+ ip route-static 9.9.9.0 24 192.168.68.2
+ ip route-static 10.10.10.0 24 192.168.68.2
+ ip route-static 11.11.11.0 24 192.168.68.2
+ ip route-static 12.12.12.0 24 192.168.68.2
+#
+
+Route 7
+ ip route-static 1.1.1.0 24 192.168.57.1
+ ip route-static 2.2.2.0 24 192.168.57.1
+ ip route-static 3.3.3.0 24 192.168.57.1
+ ip route-static 4.4.4.0 24 192.168.57.1
+ ip route-static 5.5.5.0 24 192.168.57.1
+ ip route-static 6.6.6.0 24 192.168.57.1
+ ip route-static 6.6.6.0 24 192.168.78.2
+ ip route-static 8.8.8.0 24 192.168.78.2
+ ip route-static 9.9.9.0 24 192.168.78.2
+ ip route-static 10.10.10.0 24 192.168.78.2
+ ip route-static 11.11.11.0 24 192.168.78.2
+ ip route-static 12.12.12.0 24 192.168.78.2
+#
+
+Route 8
+ip route-static 1.1.1.0 24 192.168.68.1
+ ip route-static 1.1.1.0 24 192.168.78.1 preference 70
+ ip route-static 2.2.2.0 24 192.168.68.1
+ ip route-static 2.2.2.0 24 192.168.78.1 preference 70
+ ip route-static 3.3.3.0 24 192.168.68.1
+ ip route-static 3.3.3.0 24 192.168.78.1 preference 70
+ ip route-static 4.4.4.0 24 192.168.68.1
+ ip route-static 4.4.4.0 24 192.168.78.1 preference 70
+ ip route-static 5.5.5.0 24 192.168.68.1
+ ip route-static 5.5.5.0 24 192.168.78.1 preference 70
+ ip route-static 6.6.6.0 24 192.168.68.1
+ ip route-static 7.7.7.0 24 192.168.78.1
+ ip route-static 9.9.9.0 24 192.168.89.2
+ ip route-static 10.10.10.0 24 192.168.89.2
+ ip route-static 11.11.11.0 24 192.168.89.2
+ ip route-static 12.12.12.0 24 192.168.89.2
+Route 9
+ ip route-static 1.1.1.0 24 192.168.89.1
+ ip route-static 2.2.2.0 24 192.168.89.1
+ ip route-static 3.3.3.0 24 192.168.89.1
+ ip route-static 4.4.4.0 24 192.168.89.1
+ ip route-static 5.5.5.0 24 192.168.89.1
+ ip route-static 6.6.6.0 24 192.168.89.1
+ ip route-static 7.7.7.0 24 192.168.89.1
+ ip route-static 8.8.8.0 24 192.168.89.1
+ ip route-static 10.10.10.0 24 192.168.109.2
+ ip route-static 11.11.11.0 24 192.168.119.2
+ ip route-static 12.12.12.0 24 192.168.109.2
+ ip route-static 12.12.12.0 24 192.168.119.2 preference 70
+#
+
+Route 10
+#
+ ip route-static 1.1.1.0 24 192.168.109.1
+ ip route-static 2.2.2.0 24 192.168.109.1
+ ip route-static 3.3.3.0 24 192.168.109.1
+ ip route-static 4.4.4.0 24 192.168.109.1
+ ip route-static 5.5.5.0 24 192.168.109.1
+ ip route-static 6.6.6.0 24 192.168.109.1
+ ip route-static 7.7.7.0 24 192.168.109.1
+ ip route-static 8.8.8.0 24 192.168.109.1
+ ip route-static 9.9.9.0 24 192.168.109.1
+ ip route-static 11.11.11.0 24 192.168.109.1
+ ip route-static 11.11.11.0 24 192.168.120.2
+ ip route-static 12.12.12.0 24 192.168.120.2
+#
+domain name system
+
+Route 11
+#
+ ip route-static 1.1.1.0 24 192.168.119.1
+ ip route-static 2.2.2.0 24 192.168.119.1
+ ip route-static 3.3.3.0 24 192.168.119.1
+ ip route-static 4.4.4.0 24 192.168.119.1
+ ip route-static 5.5.5.0 24 192.168.119.1
+ ip route-static 6.6.6.0 24 192.168.119.1
+ ip route-static 7.7.7.0 24 192.168.119.1
+ ip route-static 8.8.8.0 24 192.168.119.1
+ ip route-static 9.9.9.0 24 192.168.119.1
+ ip route-static 10.10.10.0 24 192.168.119.1
+ ip route-static 10.10.10.0 24 192.168.121.2
+ ip route-static 12.12.12.0 24 192.168.121.2
+#
+
+Route 12 
+
+ ip route-static 0.0.0.0 0 192.168.120.1
+ ip route-static 0.0.0.0 0 192.168.121.1 preference 70
+#
+domain name system

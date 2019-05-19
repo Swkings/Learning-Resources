@@ -1,0 +1,392 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)http://172.22.112.234/orclguide/orcl7.htm -->
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=gb2312"> 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"> 
+<STYLE>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Palatino;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@微软雅黑";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"\@Palatino";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"标题 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"页眉 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"页脚 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"批注框文本 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+span.Char
+	{mso-style-name:"页眉 Char";
+	mso-style-link:页眉;}
+span.Char0
+	{mso-style-name:"页脚 Char";
+	mso-style-link:页脚;}
+span.Char1
+	{mso-style-name:"批注框文本 Char";
+	mso-style-link:批注框文本;}
+p.SP16319659, li.SP16319659, div.SP16319659
+	{mso-style-name:"SP\.16\.319659";
+	margin-top:19.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Palatino","serif";}
+p.SP16319880, li.SP16319880, div.SP16319880
+	{mso-style-name:"SP\.16\.319880";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Palatino","serif";}
+span.SC16303111
+	{mso-style-name:"SC\.16\.303111";
+	font-family:"Palatino","serif";
+	color:black;}
+p.SP16319693, li.SP16319693, div.SP16319693
+	{mso-style-name:"SP\.16\.319693";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Palatino","serif";}
+span.SC16303164
+	{mso-style-name:"SC\.16\.303164";
+	font-family:Courier;
+	color:black;}
+span.1Char
+	{mso-style-name:"标题 1 Char";
+	mso-style-link:"标题 1";
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 2.0cm 2.0cm 2.0cm;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</STYLE>
+ </HEAD> 
+<BODY lang="EN-US">
+<DIV class="WordSection1" style="-ms-layout-grid: both loose 15.6pt none;">
+<P class="MsoNormal" style="line-height: 200%;"><SPAN lang="ZH-CN" style="line-height: 200%; font-family: 黑体; font-size: 14pt;">实验七 
+</SPAN><SPAN 
+style="line-height: 200%; font-family: 黑体; font-size: 14pt;">PL/SQL<SPAN lang="ZH-CN">程序基础</SPAN>2</SPAN></P>
+<P class="MsoNormal" style="margin: 13pt 0cm; line-height: 172%; page-break-after: avoid;"><B><SPAN 
+lang="ZH-CN" 
+style="line-height: 172%; font-family: 宋体; font-size: 12pt;">一．上机目的</SPAN></B></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">在掌握</SPAN>PL/SQL<SPAN lang="ZH-CN" style="font-family: 宋体;">程序的基本结构编程的基础上，学会一些较复杂的</SPAN>PL/SQL<SPAN 
+lang="ZH-CN" style="font-family: 宋体;">编程方法。</SPAN></P>
+<P class="MsoNormal" style="margin: 13pt 0cm; line-height: 172%; page-break-after: avoid;"><B><SPAN 
+lang="ZH-CN" 
+style="line-height: 172%; font-family: 宋体; font-size: 12pt;">二．示例</SPAN></B></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>1</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">．</SPAN><SPAN style='font-family: "Times New Roman","serif";'>&nbsp;
+</SPAN><SPAN lang="ZH-CN" style="font-family: 宋体;">题目：</SPAN><SPAN style='font-family: "Times New Roman","serif";'>1+2+</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">…</SPAN><SPAN style='font-family: "Times New Roman","serif";'>+n</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">请编写一个名为</SPAN><SPAN style='font-family: "Times New Roman","serif";'>F24</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">的存储函数，计算</SPAN><SPAN style='font-family: "Times New Roman","serif";'> 
+1+2+</SPAN><SPAN lang="ZH-CN" style="font-family: 宋体;">…</SPAN><SPAN style='font-family: "Times New Roman","serif";'>+n 
+</SPAN><SPAN lang="ZH-CN" style="font-family: 宋体;">的和并返回，如果异常则返回</SPAN><SPAN 
+style='font-family: "Times New Roman","serif";'>0</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">。</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" style="font-family: 宋体;">说明：</SPAN><SPAN 
+style='font-family: "Times New Roman","serif";'>n</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">的值存放在</SPAN><SPAN style='font-family: "Times New Roman","serif";'>A_DB</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">模式中的“输入参数表”中。</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">代码如下：</SPAN></P>
+<P class="MsoNormal"><SPAN style='font-family: "Times New Roman","serif";'><IMG 
+width="664" height="540" id="图片 2" src="实验七_files/image001.jpg"></SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">调用存储函数</SPAN><SPAN style='font-family: "Times New Roman","serif";'>F24</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">：</SPAN></P>
+<P class="MsoNormal" style="text-indent: 8.5pt; margin-left: 12.5pt;"><SPAN 
+style='font-family: "Times New Roman","serif";'>SQL&gt; select f24( ) result 
+from dual;</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">结果如下：</SPAN></P>
+<P class="MsoNormal" style="margin-left: 21pt;"><SPAN style='font-family: "Times New Roman","serif";'>&nbsp;&nbsp;&nbsp;
+RESULT</SPAN></P>
+<P class="MsoNormal" style="margin-left: 21pt;"><SPAN style='font-family: "Times New Roman","serif";'>&nbsp;&nbsp;&nbsp;
+----------</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt; margin-left: 21pt;"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp; 500500</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt; margin-left: 21pt;"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">查看自己有哪些存储过程与函数：</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>select lpad(object_name,12), 
+object_type, procedure_name from user_procedures;</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt; margin-left: 21pt;"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt; margin-left: 21pt;"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>2</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">．</SPAN><SPAN style='font-family: "Times New Roman","serif";'>&nbsp;
+</SPAN><SPAN lang="ZH-CN" style="font-family: 宋体;">题目：水仙花数</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" style="font-family: 宋体;">在</SPAN><SPAN 
+style='font-family: "Times New Roman","serif";'>A_DB</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">模式中有一个名为</SPAN><SPAN style='font-family: "Times New Roman","serif";'>tanbn1(a,b)</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">的表，表中有若干个整数（不要管是否有重复）。</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">请编写一个名为</SPAN><SPAN style='font-family: "Times New Roman","serif";'>F25</SPAN><SPAN 
+lang="ZH-CN" 
+style="font-family: 宋体;">的存储函数，统计该表中有多少个数是水仙花数，并作为函数返回值返回。</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">说明：如果一个三位数等于其各位数字的立方之和，则该数称为水仙花数。如</SPAN><SPAN style='font-family: "Times New Roman","serif";'>153=1*1*1+5*5*5+3*3*3</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">。</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">代码如下：</SPAN></P>
+<P class="MsoNormal" style="margin-left: -14.2pt;"><IMG width="1070" height="650" 
+id="图片 1" src="实验七_files/image002.jpg"></P>
+<P class="MsoNormal" style="margin-left: -14.2pt;"><SPAN style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">调用存储函数</SPAN><SPAN style='font-family: "Times New Roman","serif";'>F25</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">：</SPAN></P>
+<P class="MsoNormal" style="text-indent: 8.5pt; margin-left: 12.5pt;"><SPAN 
+style='font-family: "Times New Roman","serif";'>SQL&gt; select f25( ) result 
+from dual;</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>3</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">．</SPAN><SPAN style='font-family: "Times New Roman","serif";'>&nbsp;
+</SPAN><SPAN lang="ZH-CN" style="font-family: 宋体;">程序包</SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">创建一个名为</SPAN><SPAN style='font-family: "Times New Roman","serif";'>pkgcourse</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">的程序包，实现对课程表</SPAN><SPAN style='font-family: "Times New Roman","serif";'>c</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">数据的提取与设置。</SPAN></P>
+<P class="MsoNormal"><SPAN style='font-family: "Times New Roman","serif";'>(1) 
+&nbsp;</SPAN><SPAN lang="ZH-CN" style="font-family: 宋体;">创建包说明</SPAN></P>
+<P class="MsoNormal" style="text-indent: -21pt; margin-left: 21pt;"><IMG width="964" 
+height="355" id="图片 9" src="实验七_files/image003.jpg"></P>
+<P class="MsoNormal"><SPAN style='font-family: "Times New Roman","serif";'>(2) 
+&nbsp;</SPAN><SPAN lang="ZH-CN" style="font-family: 宋体;">创建包体</SPAN></P>
+<P align="left" class="MsoNormal" style="text-align: left;"><IMG width="963" 
+height="690" id="图片 10" src="实验七_files/image004.jpg"><IMG width="964" height="611" 
+id="图片 11" src="实验七_files/image005.jpg"></P>
+<P class="MsoNormal" style="text-indent: 10.5pt; margin-left: 21pt;"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt; margin-left: 21pt;"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style='font-family: "Times New Roman","serif";'>(3) 
+&nbsp;</SPAN><SPAN lang="ZH-CN" style="font-family: 宋体;">引用包成员</SPAN></P>
+<P class="MsoNormal" style="text-indent: -21pt; margin-left: 21pt;"><IMG width="722" 
+height="272" id="图片 12" src="实验七_files/image006.jpg"></P>
+<P class="MsoNormal" style="text-indent: -21pt; margin-left: 21pt;"><IMG width="721" 
+height="110" id="图片 15" src="实验七_files/image007.jpg"></P>
+<P class="MsoNormal" style="text-indent: -42.55pt; margin-left: 42.55pt;"><IMG 
+width="719" height="225" id="图片 16" src="实验七_files/image008.jpg"></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Arial","sans-serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style='font-family: "微软雅黑","sans-serif";'>4.&nbsp; 
+<SPAN lang="ZH-CN">十进制转换为二进制</SPAN></SPAN></P>
+<P class="MsoNormal" style="text-indent: 0.3pt; margin-left: 21pt;"><IMG width="671" 
+height="494" id="图片 7" src="实验七_files/image009.jpg"></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;&nbsp;</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">调用：</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>SQL&gt;
+ select number_to_bit(208) from dual; </SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>NUMBER_TO_BIT(208)</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>-----------------------------</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>11010000</SPAN></P>
+<P class="MsoNormal"><SPAN style='font-family: "微软雅黑","sans-serif";'>5. <SPAN 
+lang="ZH-CN">二进制转换为十进制</SPAN></SPAN></P>
+<P class="MsoNormal" style="margin-left: 14.2pt;"><IMG width="890" height="585" 
+id="图片 8" src="实验七_files/image010.jpg"></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;&nbsp;</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">调用：</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>SQL&gt;
+ select &nbsp;bit_to_number ('11010000') from dual;</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>BIT_TO_NUMBER('11010000')</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>-------------------------</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+208</SPAN></P>
+<P class="MsoNormal" style="text-indent: 10.5pt;"><SPAN style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal" style="margin: 13pt 0cm; line-height: 172%; page-break-after: avoid;"><B><SPAN 
+lang="ZH-CN" 
+style="line-height: 172%; font-family: 宋体; font-size: 12pt;">三．实验主要内容</SPAN></B></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">1. <SPAN 
+lang="ZH-CN">在</SPAN>A_DB<SPAN lang="ZH-CN">模式中有一个名为</SPAN>tan1(a)<SPAN lang="ZH-CN">的表，表中有若干个整数（不要管是否有重复）。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">请编写一个名为</SPAN><SPAN 
+style="font-family: 宋体;">obj7_1</SPAN> <SPAN lang="ZH-CN" style="font-family: 宋体;">的存储函数（无参数），统计该表中有多少个数是素数，并作为函数返回值返回。</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">2. <SPAN 
+lang="ZH-CN">在</SPAN>A_DB<SPAN lang="ZH-CN">模式中有一个名为</SPAN>tan3(a)<SPAN lang="ZH-CN">的表，表中有若干个整数（不要管是否有重复）</SPAN>,<SPAN 
+lang="ZH-CN">假设这些数表示年份。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">请编写一个名为</SPAN><SPAN 
+style="font-family: 宋体;">obj7_2<SPAN 
+lang="ZH-CN">的存储函数（无参数），统计该表中有多少个年份是闰年，并作为函数返回值返回。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">说明：闰年的计算方法：被</SPAN><SPAN 
+style="font-family: 宋体;">400<SPAN lang="ZH-CN">整除，或被</SPAN>4<SPAN 
+lang="ZH-CN">整除而不能被</SPAN>100<SPAN lang="ZH-CN">整除的年份为闰年。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">3. <SPAN 
+lang="ZH-CN">在</SPAN>A_DB<SPAN lang="ZH-CN">模式中有一个名为</SPAN>tanbn1(a,b)<SPAN 
+lang="ZH-CN">的表。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">请编写一个名为</SPAN><SPAN 
+style="font-family: 宋体;">obj7_3<SPAN 
+lang="ZH-CN">的存储函数（无参数），对于表中所有三位数</SPAN>abc,<SPAN 
+lang="ZH-CN">将个位与百位数字交换，得到</SPAN>cba<SPAN lang="ZH-CN">，求这些</SPAN>cba<SPAN lang="ZH-CN">的和，并作为函数返回值返回。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">4. <SPAN 
+lang="ZH-CN">对称字符串。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" style="font-family: 宋体;">在</SPAN><SPAN 
+style="font-family: 宋体;">A_DB<SPAN lang="ZH-CN">模式中有一个名为</SPAN>tac1(a)<SPAN 
+lang="ZH-CN">的表，表中有若干个字符串（不要管是否有重复）。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">请编写一个名为</SPAN><SPAN 
+style="font-family: 宋体;">obj7_4<SPAN 
+lang="ZH-CN">的存储函数（无参数），统计该表中有多少对称字符串，并作为函数返回值返回。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">说明：对称字符串是正读倒读一样的字符串。如：“</SPAN><SPAN style="font-family: 宋体;">abcdcba<SPAN 
+lang="ZH-CN">”、“</SPAN>6<SPAN lang="ZH-CN">”和</SPAN>"123321"<SPAN 
+lang="ZH-CN">等前后对称，是对称字符串；而“</SPAN>12332<SPAN 
+lang="ZH-CN">”不是。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">5. <SPAN 
+lang="ZH-CN">编写一个名为</SPAN>obj7_5<SPAN lang="ZH-CN">的存储过程，判断正整数</SPAN>n<SPAN 
+lang="ZH-CN">是否是若干个连续的正整数之和。如是，则输出这些连续的正整数；如果有多串连续的正整数，则输出最长的那串连续的正整数。</SPAN>n<SPAN 
+lang="ZH-CN">是过程的参数。如：</SPAN>15=1+2+3+4+5<SPAN lang="ZH-CN">，</SPAN>15=7+8<SPAN 
+lang="ZH-CN">，则输出</SPAN>1,2,3,4,5<SPAN lang="ZH-CN">。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">6. <SPAN 
+lang="ZH-CN">编写一个名为</SPAN>obj7_6<SPAN lang="ZH-CN">的存储函数，判断正整数</SPAN>n<SPAN 
+lang="ZH-CN">是否是若干个连续的正整数之和。如是，则返回</SPAN>1<SPAN lang="ZH-CN">，否则返回</SPAN>0<SPAN 
+lang="ZH-CN">。</SPAN>n<SPAN lang="ZH-CN">是函数的参数。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">7. <SPAN 
+lang="ZH-CN">在</SPAN>A_DB<SPAN lang="ZH-CN">模式中有一个名为</SPAN>tan2(a)<SPAN lang="ZH-CN">的表，表中有若干个整数（不要管是否有重复）。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">请编写一个名为</SPAN><SPAN 
+style="font-family: 宋体;">obj7_7<SPAN 
+lang="ZH-CN">的存储函数（无参数），统计该表中有多少个数是若干个连续的正整数之和，并作为函数返回值返回。要求调用第</SPAN>6<SPAN 
+lang="ZH-CN">题编写的存储函数</SPAN>f6(n)<SPAN lang="ZH-CN">。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">8. <SPAN 
+lang="ZH-CN">编写一个名为</SPAN>obj7_8<SPAN 
+lang="ZH-CN">的程序包，包中重载两个过程，一个以员工号为参数，输出该员工信息；另一个以员工名为参数，输出员工信息。包中另一个过程利用两个重载过程分别查询员工号为</SPAN>7902<SPAN 
+lang="ZH-CN">、</SPAN>7934<SPAN lang="ZH-CN">、以及员工名为</SPAN>SMITH<SPAN lang="ZH-CN">、</SPAN>FORD<SPAN 
+lang="ZH-CN">的员工信息。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN style="font-family: 宋体;">&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>9.&nbsp; </SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">在示例“</SPAN><SPAN style='font-family: "Times New Roman","serif";'>5. 
+</SPAN><SPAN lang="ZH-CN" style="font-family: 宋体;">二进制转换为十进制”的</SPAN><SPAN 
+style='font-family: "Times New Roman","serif";'>bit_to_number</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">函数中特意用到了动态</SPAN><SPAN style='font-family: "Times New Roman","serif";'>SQL</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">与</SPAN><SPAN style='font-family: "Times New Roman","serif";'>BIN_TO_NUM</SPAN><SPAN 
+lang="ZH-CN" style="font-family: 宋体;">函数。请换一种方式实现相同的功能</SPAN><SPAN lang="ZH-CN" 
+style="font-family: 宋体;">，该存储函数命名为</SPAN><SPAN 
+style="font-family: 宋体;">obj7_9<SPAN lang="ZH-CN">。</SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN 
+style='font-family: "Times New Roman","serif";'>&nbsp;</SPAN></P>
+<P class="MsoNormal"><SPAN 
+style="font-family: 宋体;">&nbsp;</SPAN></P></DIV></BODY></HTML>

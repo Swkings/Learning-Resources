@@ -1,0 +1,195 @@
+Route 1
+ospf 1 router-id 1.1.1.1
+ area 0.0.0.123
+  network 1.1.1.0 0.0.0.255
+network 192.168.13.1 0.0.0.0
+#
+interface LoopBack0
+ ip address 1.1.1.1 255.255.255.0
+#
+interface GigabitEthernet0/0
+ ip address 192.168.13.1 255.255.255.0
+
+Route 2
+ospf 1 router-id 2.2.2.2
+ area 0.0.0.123
+  network 2.2.2.0 0.0.0.255
+  network 192.168.23.1 0.0.0.0
+#
+interface Serial1/0
+ ip address 192.168.23.1 255.255.255.0
+#
+interface LoopBack0
+ ip address 2.2.2.2 255.255.255.0
+Route 3 
+ospf 1 router-id 3.3.3.3
+ area 0.0.0.0
+  network 192.168.34.1 0.0.0.0
+ area 0.0.0.123
+  network 3.3.3.3 0.0.0.0
+  network 192.168.13.2 0.0.0.0
+#
+interface Serial1/0
+ ip address 192.168.23.2 255.255.255.0
+#
+interface Serial2/0
+ ip address 192.168.34.1 255.255.255.0
+#
+interface LoopBack0
+ ip address 3.3.3.3 255.255.255.0
+#
+interface GigabitEthernet0/0
+ ip address 192.168.13.2 255.255.255.0
+Route 4 
+ospf 1 router-id 4.4.4.4
+ area 0.0.0.0
+  network 4.4.4.4 0.0.0.0
+  network 192.168.34.2 0.0.0.0
+  network 192.168.47.1 0.0.0.0
+ area 0.0.0.56
+  network 192.168.45.1 0.0.0.0
+#
+ ip unreachables enable
+ ip ttl-expires enable
+#
+interface Serial1/0
+ ip address 192.168.47.1 255.255.255.0
+#
+interface Serial2/0
+ ip address 192.168.34.2 255.255.255.0
+#
+interface LoopBack0
+ ip address 4.4.4.4 255.255.255.0
+#
+interface GigabitEthernet0/0
+ ip address 192.168.45.1 255.255.255.0
+Route 5 
+ospf 1 router-id 5.5.5.5
+ area 0.0.0.56
+  network 5.5.5.5 0.0.0.0
+  network 192.168.45.2 0.0.0.0
+  network 192.168.56.1 0.0.0.0
+#
+interface Serial1/0
+ ip address 192.168.56.1 255.255.255.0
+#
+interface LoopBack0
+ ip address 5.5.5.5 255.255.255.0
+#
+interface GigabitEthernet0/0
+ ip address 192.168.45.2 255.255.255.0
+Route 6 
+ sysname route6
+#
+ospf 1 router-id 6.6.6.6
+ area 0.0.0.56
+  network 6.6.6.6 0.0.0.0
+  network 192.168.56.2 0.0.0.0
+#
+interface Serial1/0
+ ip address 192.168.56.2 255.255.255.0
+#
+interface LoopBack0
+ ip address 6.6.6.6 255.255.255.0
+Route 7 
+ sysname route7
+#
+ospf 1 router-id 7.7.7.7
+ area 0.0.0.0
+  network 7.7.7.7 0.0.0.0
+  network 192.168.47.2 0.0.0.0
+  network 192.168.79.1 0.0.0.0
+ area 0.0.0.8
+  network 192.168.78.1 0.0.0.0
+#
+ ip unreachables enable
+ ip ttl-expires enable
+#
+interface Serial1/0
+ ip address 192.168.47.2 255.255.255.0
+#
+interface Serial2/0
+ ip address 192.168.79.1 255.255.255.0
+#
+interface LoopBack0
+ ip address 7.7.7.7 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.78.1 255.255.255.0
+
+Route 8 
+ sysname route8
+#
+ospf 1 router-id 8.8.8.8
+ area 0.0.0.8
+  network 8.8.8.8 0.0.0.0
+  network 192.168.78.2 0.0.0.0
+#
+interface LoopBack0
+ ip address 8.8.8.8 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.78.2 255.255.255.0
+Route 9 
+
+ sysname route9
+#
+ospf 1 router-id 9.9.9.9
+ area 0.0.0.0
+  network 9.9.9.9 0.0.0.0
+  network 192.168.79.2 0.0.0.0
+ area 0.0.3.243
+  network 192.168.109.1 0.0.0.0
+  network 192.168.119.1 0.0.0.0
+#
+ ip unreachables enable
+ ip ttl-expires enable
+#
+interface Serial2/0
+ ip address 192.168.79.2 255.255.255.0
+#
+interface LoopBack0
+ ip address 9.9.9.9 255.255.255.0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+ ip address 192.168.109.1 255.255.255.0
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.119.1 255.255.255.0
+Route 10 
+ sysname route10
+#
+ospf 1 router-id 10.10.10.10
+ area 0.0.3.243
+  network 10.10.10.10 0.0.0.0
+  network 192.168.109.2 0.0.0.0
+#
+ ip unreachables enable
+ ip ttl-expires enable
+interface LoopBack0
+ ip address 10.10.10.10 255.255.255.0
+#
+interface GigabitEthernet0/0
+ ip address 192.168.109.2 255.255.255.0
+Route 11 
+#
+ sysname route11
+#
+ospf 1 router-id 11.11.11.11
+ area 0.0.3.243
+  network 11.11.11.11 0.0.0.0
+  network 192.168.119.2 0.0.0.0
+#
+interface LoopBack0
+ ip address 11.11.11.11 255.255.255.0
+#
+interface GigabitEthernet0/1
+ ip address 192.168.119.2 255.255.255.0
